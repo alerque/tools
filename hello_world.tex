@@ -1,0 +1,51 @@
+\useregime[utf]
+\enableregime[utf]
+\definepapersize [Trade][width=5.25in, height=8in]
+\setuppapersize [Trade][Trade]
+\setuppagenumbering [alternative=doublesided]
+\mainlanguage[en]
+\setupbodyfont[dejavu]
+\usetypescript[dejavu][uc]
+\setupalign[hanging]
+
+\setupbodyfontenvironment[default][em=italic]
+
+\setupspacing[packed]   % normal word space at the end of sentences
+\setupwhitespace[none]  % no space between paragraphs
+\setupindenting[small, yes]
+
+\setuppagenumbering[location=margin]
+
+\setuplayout[backspace=20mm,
+    topspace=36pt,
+    bottomspace=36pt,
+    header=0mm,
+    height=fit,
+    bottom=0mm,
+    footer=1mm]
+
+% Enables index in PDF document
+\placebookmarks[section]
+\setupinteractionscreen[option=bookmark]
+\setuphead[section][style=\tfd, number=no, before=\blank, after=\blank, align={middle, nothyphenated, verytolerant}]
+
+\setupbodyfont[dejavu, 9pt]
+\setupinterlinespace[line=11pt] % Line spacing
+
+% Let us say hello in many languages
+\starttext
+    \setupfooter [state=start]
+    \page[1]
+    \startfrontmatter
+        {\midaligned {\tfc{\WORD{Hello World}}}}
+        \placecontent[extras={22=page},alternative=c]
+    \stopfrontmatter
+    \page[yes]
+    \startbodymatter
+        \section{1. Russian: Привет мир!} Russian: Привет мир! \\
+        \section{2. Punjabi: ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ!} Punjabi: ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ! \\
+        \section{3. Arabic: مرحبا أيها العالم!} Arabic: مرحبا أيها العالم! \\
+        \section{4. Hebrew: שלום העולם!} Hebrew: שלום העולם! \\
+        \section{5. Armenian: Բարեւ աշխարհ!} Armenian: Բարեւ աշխարհ! \\
+    \stopbodymatter
+\stoptext
