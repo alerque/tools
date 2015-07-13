@@ -1,0 +1,1308 @@
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (INITEX)  8 APR 2015 20:08
+entering extended mode
+ \write18 enabled.
+***cont-nl.mkii
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/cont-nl.mk
+ii
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/context.mk
+ii
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-ini.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-pln.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/norm-tex.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/norm-etx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/norm-ptx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/norm-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/norm-ctx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/catc-ini.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/catc-act.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/catc-def.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/catc-ctx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/catc-sym.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/catc-xml.m
+kii
+loading: ConTeXt Catcode Regimes / XML
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-gen.m
+kii
+warning: \count \scratchcounter is already defined (\relax it first)
+warning: \count \globalscratchcounter is already defined (\relax it first)
+warning: \dimen \scratchdimen is already defined (\relax it first)
+warning: \dimen \globalscratchdimen is already defined (\relax it first)
+warning: \skip \scratchskip is already defined (\relax it first)
+warning: \skip \globalscratchskip is already defined (\relax it first)
+warning: \muskip \scratchmuskip is already defined (\relax it first)
+warning: \muskip \globalscratchmuskip is already defined (\relax it first)
+warning: \toks \scratchtoks is already defined (\relax it first)
+warning: \toks \globalscratchtoks is already defined (\relax it first)
+warning: \box \scratchbox is already defined (\relax it first)
+warning: \box \globalscratchbox is already defined (\relax it first)
+warning: \dimen \scratchdimenone is already defined (\relax it first)
+warning: \box \scratchboxone is already defined (\relax it first)
+warning: \count \scratchcounterone is already defined (\relax it first)
+warning: \dimen \scratchdimentwo is already defined (\relax it first)
+warning: \box \scratchboxtwo is already defined (\relax it first)
+warning: \count \scratchcountertwo is already defined (\relax it first)
+warning: \toks \emptytoks is already defined (\relax it first)
+loading         : ConTeXt System Macros / General
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-ext.m
+kii
+loading         : ConTeXt System Macros / Extras
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-new.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-con.m
+kii
+loading         : ConTeXt System Macros / Conversions
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/thrd-trg.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-fnt.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-str.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/syst-rtp.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xetx-ini.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xetx-utf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xetx-chr.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xetx-cls.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-fil.m
+kii
+loading         : ConTeXt Support Macros / Files
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-dir.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-lat.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-ini.m
+kii
+loading         : ConTeXt Multilingual Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-fst.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-sys.m
+kii
+loading         : ConTeXt Multilingual Macros / System
+interface       : defining dutch interface
+
+interface       : using dutch messages
+
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-def.m
+kii
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-nl.mk
+ii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-mnl.m
+kii))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-chk.m
+kii
+loading         : ConTeXt Multilingual Macros / Checking
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/mult-aux.m
+kii
+loading         : ConTeXt Multilingual Macros / Helpers
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-var.m
+kii
+loading         : ConTeXt Core Macros / Variables
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-env.m
+kii
+loading         : ConTeXt Core Macros / Environments
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-box.m
+kii
+loading         : ConTeXt Support Macros / Boxes
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-mrk.m
+kii
+loading         : ConTeXt Support Macros / Marks
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-vis.m
+kii
+loading         : ConTeXt Support Macros / Visualization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-fun.m
+kii
+loading         : ConTeXt Support Macros / Fun Stuff
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-spe.m
+kii
+loading         : ConTeXt Support Macros / Specials
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-ran.m
+kii
+loading         : ConTeXt Support Macros / Random Number Generation
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/thrd-ran.m
+kii))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-mps.m
+kii
+loading         : ConTeXt Support Macros / MetaPost Inclusion
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-tpi.m
+kii
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-eps.m
+kii
+loading         : ConTeXt Support Macros / EPS
+)
+loading         : ConTeXt Support Macros / TPIC Conversion
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-mat.m
+kii
+loading         : ConTeXt Support Macros / Math
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-ali.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-num.m
+kii
+loading         : ConTeXt Support Macros / Numbers
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/verb-ini.m
+kii
+loading         : ConTeXt Verbatim Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-ins.m
+kii
+loading         : ConTeXt Core Macros / Insertions
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-fil.m
+kii
+loading         : ConTeXt Core Macros / File Support
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-con.m
+kii
+loading         : ConTeXt Core Macros / Conversion
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/cont-fil.m
+kii
+loading         : ConTeXt File Synonyms
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/thrd-tab.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/supp-pat.m
+kii
+loading         : ConTeXt Support Macros / Patterns
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/regi-ini.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/regi-syn.m
+kii
+loading         : ConTeXt Regime Macros / Synonyms
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-ini.m
+kii
+loading         : ConTeXt Encoding Macros / Initialization
+encoding        : codering def wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-def.m
+kii)
+encoding        : codering acc wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-acc.m
+kii)
+encoding        : codering raw wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-raw.m
+kii)
+encoding        : codering com wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-com.m
+kii)
+encoding        : codering cas wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-cas.m
+kii)
+encoding        : codering mis wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-mis.m
+kii))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/hand-ini.m
+kii
+handling        : font afhandeling def wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/hand-def.m
+kii))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-ini.m
+kii
+loading         : ConTeXt Language Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-spe.m
+kii
+loading         : ConTeXt Language Macros / Specifics
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-lab.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-ini.m
+kii
+loading         : ConTeXt Unicode Support / Initialization
+warning         : \count \utf@c is already defined (\relax it first)
+unicode         : loading vector 0
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-000.m
+kii)
+unicode         : loading vector 1
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-001.m
+kii)
+unicode         : loading vector 2
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-002.m
+kii)
+unicode         : loading vector 3
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-003.m
+kii)
+unicode         : loading vector 4
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-004.m
+kii)
+unicode         : loading vector 5
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-005.m
+kii)
+unicode         : loading vector 30
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-030.m
+kii)
+unicode         : loading vector 31
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-031.m
+kii)
+unicode         : loading vector 32
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-032.m
+kii)
+unicode         : loading vector 33
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-033.m
+kii)
+unicode         : loading vector 34
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-034.m
+kii)
+unicode         : loading vector 35
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-035.m
+kii)
+unicode         : loading vector 37
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-037.m
+kii)
+unicode         : loading vector 39
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-039.m
+kii)
+unicode         : loading vector 251
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-251.m
+kii)
+unicode         : loading vector cjk
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/unic-cjk.m
+kii)
+regime          : regime utf wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/regi-utf.m
+kii))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-gen.m
+kii
+loading         : ConTeXt Core Macros / General
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-uti.m
+kii
+loading         : ConTeXt Core Macros / Utility File Handling
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-two.m
+kii
+loading         : ConTeXt Core Macros / Two Pass Data
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-stg.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spec-ini.m
+kii
+loading         : ConTeXt Special Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spec-mis.m
+kii
+loading         : ConTeXt Special Macros / Miscellaneous Macros
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spec-def.m
+kii
+loading         : ConTeXt Special Macros / Definitions
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spec-var.m
+kii
+loading         : ConTeXt Special Macros / Variables
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/colo-ini.m
+kii
+loading         : ConTeXt Color Macros / Initialization
+kleur           : specificatie [s=0] bij black wordt zwart
+kleur           : systeem rgb wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/colo-rgb.m
+kii
+kleur           : specificatie [s=0] bij black wordt zwart
+))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/colo-ext.m
+kii
+loading         : ConTeXt Color Macros / Extras
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-mis.m
+kii
+loading         : ConTeXt Language Macros / Compounds
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-url.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-ger.m
+kii
+loading         : ConTeXt Language Macros / Germanic Languages
+taal            : afbreekpatronen nl voor nl geladen (n=1,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-n
+l.pat)
+taal            : afbreekdefinities nl voor nl geladen (n=1,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-n
+l.hyp)
+taal            : afbreekpatronen us voor en geladen (n=2,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-u
+s.pat)
+taal            : afbreekdefinities us voor en geladen (n=2,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-u
+s.hyp)
+taal            : afbreekpatronen de voor de geladen (n=3,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-d
+e.pat)
+taal            : afbreekdefinities de voor de geladen (n=3,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-d
+e.hyp)
+taal            : afbreekpatronen da voor da geladen (n=4,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-d
+a.pat)
+taal            : afbreekdefinities da voor da geladen (n=4,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-d
+a.hyp)
+taal            : afbreekpatronen sv voor sv geladen (n=5,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-s
+v.pat)
+taal            : afbreekdefinities sv voor sv geladen (n=5,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-s
+v.hyp)
+taal            : afbreekpatronen af voor af geladen (n=6,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-a
+f.pat)
+taal            : afbreekdefinities af voor af geladen (n=6,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-a
+f.hyp)
+taal            : afbreekpatronen voor nb niet geladen
+taal            : afbreekpatronen voor nn niet geladen
+taal            : afbreekpatronen gb voor en-gb geladen (n=7,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-g
+b.pat)
+taal            : afbreekdefinities gb voor en-gb geladen (n=7,e=default,m=defa
+ult)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-g
+b.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-ita.m
+kii
+loading         : ConTeXt Language Macros / Italic Languages
+taal            : afbreekpatronen fr voor fr geladen (n=8,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-f
+r.pat)
+taal            : afbreekdefinities fr voor fr geladen (n=8,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-f
+r.hyp)
+taal            : afbreekpatronen es voor es geladen (n=9,e=default,m=default)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-e
+s.pat)
+taal            : afbreekdefinities es voor es geladen (n=9,e=default,m=default
+)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-e
+s.hyp)
+taal            : afbreekpatronen ca voor ca geladen (n=10,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-c
+a.pat)
+taal            : afbreekdefinities ca voor ca geladen (n=10,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-c
+a.hyp)
+taal            : afbreekpatronen it voor it geladen (n=11,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-i
+t.pat)
+taal            : afbreekdefinities it voor it geladen (n=11,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-i
+t.hyp)
+taal            : afbreekpatronen la voor la geladen (n=12,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-l
+a.pat)
+taal            : afbreekdefinities la voor la geladen (n=12,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-l
+a.hyp)
+taal            : afbreekpatronen pt voor pt geladen (n=13,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-p
+t.pat)
+taal            : afbreekdefinities pt voor pt geladen (n=13,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-p
+t.hyp)
+taal            : afbreekpatronen ro voor ro geladen (n=14,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-r
+o.pat)
+taal            : afbreekdefinities ro voor ro geladen (n=14,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-r
+o.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-sla.m
+kii
+loading         : ConTeXt Language Macros / Slavic Languages
+taal            : afbreekpatronen pl voor pl geladen (n=15,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-p
+l.pat)
+taal            : afbreekdefinities pl voor pl geladen (n=15,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-p
+l.hyp)
+taal            : afbreekpatronen cs voor cs geladen (n=16,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-c
+s.pat)
+taal            : afbreekdefinities cs voor cs geladen (n=16,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-c
+s.hyp)
+taal            : afbreekpatronen sk voor sk geladen (n=17,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-s
+k.pat)
+taal            : afbreekdefinities sk voor sk geladen (n=17,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-s
+k.hyp)
+taal            : afbreekpatronen hr voor hr geladen (n=18,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-h
+r.pat)
+taal            : afbreekdefinities hr voor hr geladen (n=18,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-h
+r.hyp)
+taal            : afbreekpatronen sl voor sl geladen (n=19,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-s
+l.pat)
+taal            : afbreekdefinities sl voor sl geladen (n=19,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-s
+l.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-alt.m
+kii
+loading         : ConTeXt Language Macros / Altaic Languages
+taal            : afbreekpatronen tr voor tr geladen (n=20,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-t
+r.pat)
+taal            : afbreekdefinities tr voor tr geladen (n=20,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-t
+r.hyp)
+taal            : afbreekpatronen tk voor tk geladen (n=21,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-t
+k.pat)
+taal            : afbreekdefinities tk voor tk geladen (n=21,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-t
+k.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-ana.m
+kii
+loading         : ConTeXt Language Macros / Anatolian Languages
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-art.m
+kii
+loading         : ConTeXt Language Macros / Artificial Languages
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-bal.m
+kii
+loading         : ConTeXt Language Macros / Baltic Languages
+taal            : afbreekpatronen lt voor lt geladen (n=22,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-l
+t.pat)
+taal            : afbreekdefinities lt voor lt geladen (n=22,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-l
+t.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-cel.m
+kii
+loading         : ConTeXt Language Macros / Celtic Languages
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-grk.m
+kii
+loading         : ConTeXt Language Macros / Greek
+taal            : geen afbreekpatronen gr voor gr (n=23,e=default,m=default) (l
+ang-gr.pat,lang-gr.pat)
+taal            : geen afbreekdefinities gr voor gr (n=23,e=default,m=default)
+taal            : afbreekpatronen agr voor agr geladen (n=24,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-a
+gr.pat)
+taal            : afbreekdefinities agr voor agr geladen (n=24,e=default,m=defa
+ult)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-a
+gr.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-ind.m
+kii
+loading         : ConTeXt Language Macros / Indo-Iranian Languages
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-ura.m
+kii
+loading         : ConTeXt Language Macros / Uralic Languages
+taal            : afbreekpatronen fi voor fi geladen (n=25,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-f
+i.pat)
+taal            : afbreekdefinities fi voor fi geladen (n=25,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-f
+i.hyp)
+taal            : afbreekpatronen hu voor hu geladen (n=26,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-h
+u.pat)
+taal            : afbreekdefinities hu voor hu geladen (n=26,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-h
+u.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-vn.mk
+ii
+loading         : ConTeXt Language Macros / Vietnamese Language
+taal            : geen afbreekpatronen vi voor vi (n=27,e=default,m=default) (l
+ang-vi.pat,lang-vi.pat)
+taal            : geen afbreekdefinities vi voor vi (n=27,e=default,m=default)
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-cyr.m
+kii
+loading         : ConTeXt Language Macros / Cyrillic Languages
+taal            : afbreekpatronen ru voor ru geladen (n=28,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-r
+u.pat)
+taal            : afbreekdefinities ru voor ru geladen (n=28,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-r
+u.hyp)
+taal            : afbreekpatronen uk voor ua geladen (n=29,e=default,m=default)
+
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-u
+k.pat)
+taal            : afbreekdefinities uk voor ua geladen (n=29,e=default,m=defaul
+t)
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/patterns/lang-u
+k.hyp))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/typo-ini.m
+kii
+loading         : ConTeXt Typographic Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/symb-ini.m
+kii
+loading         : ConTeXt Symbol Libraries / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/sort-ini.m
+kii
+loading         : ConTeXt Sorting Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spac-gen.m
+kii
+loading         : ConTeXt Core Macros / Spacing
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spac-grd.m
+kii
+loading         : ConTeXt Core Macros / Grid Snapping
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-mar.m
+kii
+loading         : ConTeXt Structure Macros / Markings
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/anch-pos.m
+kii
+loading         : ConTeXt Anchoring Macros / Positioning
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/buff-ver.m
+kii
+loading         : ConTeXt Buffer Macros / Verbatim
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/buff-ini.m
+kii
+loading         : ConTeXt Buffer Macros / Buffers
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/pack-rul.m
+kii
+loading         : ConTeXt Packaging Macros / Ruled Content
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/trac-vis.m
+kii
+loading         : ConTeXt Tracking Macros / Visualization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-num.m
+kii
+loading         : ConTeXt Structure Macros / Numbering
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-com.m
+kii
+loading         : ConTeXt Table Macros / Common Code
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-pln.m
+kii
+loading         : ConTeXt Table Macros / Plain Tabular
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-tab.m
+kii
+loading         : ConTeXt Table Macros / TaBlE Embedding
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-tsp.m
+kii
+loading         : ConTeXt Table Macros / Splitting
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/scrn-nav.m
+kii
+loading         : ConTeXt Screen Macros / Navigation
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-ref.m
+kii
+loading         : ConTeXt Structure Macros / Cross Referencing
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/pack-obj.m
+kii
+loading         : ConTeXt Packaging Macros / Objects
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-lst.m
+kii
+loading         : ConTeXt Structure Macros / Lists
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-itm.m
+kii
+loading         : ConTeXt Structure Macros / Itemgroups
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-des.m
+kii
+loading         : ConTeXt Structure Macros / Descriptions
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-mat.m
+kii
+loading         : ConTeXt Structure Macros / Math Fundamentals
+warning         : \count \supersubmode is already defined (\relax it first)
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-syn.m
+kii
+loading         : ConTeXt Structure Macros / Synonyms and Sorts
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-sys.m
+kii
+loading         : ConTeXt Core Macros / System
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-ini.m
+kii
+loading         : ConTeXt Page Macros / Initializations
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-bck.m
+kii
+loading         : ConTeXt Page Macros / Backgrounds
+warning         : \dimen \pagedepth is already defined (\relax it first)
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-not.m
+kii
+loading         : ConTeXt Page Macros / Footnotes
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-one.m
+kii
+loading         : ConTeXt Page Macros / Default Routine
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-lay.m
+kii
+loading         : ConTeXt Page Macros / Layout Specification
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-log.m
+kii
+loading         : ConTeXt Page Macros / Logos
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-txt.m
+kii
+loading         : ConTeXt Page Macros / Texts
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-sid.m
+kii
+loading         : ConTeXt Page Macros / Side Floats
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-flt.m
+kii
+loading         : ConTeXt Structure Macros / Float Numbering
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-mis.m
+kii
+loading         : ConTeXt Page Macros / Misc Float Things
+layout          : margeblokken actief
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-mul.m
+kii
+loading         : ConTeXt Page Macros / Simple Multi Column
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-set.m
+kii
+loading         : ConTeXt Page Macros / Column Sets
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/pack-lyr.m
+kii
+loading         : ConTeXt Packaging Macros / Layers
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-mak.m
+kii
+loading         : ConTeXt Page Macros / MakeUp
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-pag.m
+kii
+loading         : ConTeXt Structure Macros / Numbering
+warning         : \count \pageno is already defined (\relax it first)
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-lin.m
+kii
+loading         : ConTeXt Core Macros / Line Numbering
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-par.m
+kii
+loading         : ConTeXt Page Macros / Paragraph Numbering
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-mar.m
+kii
+loading         : ConTeXt Page Macros / Maginal Things
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-job.m
+kii
+loading         : ConTeXt Core Macros / Job Handling
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-sec.m
+kii
+loading         : ConTeXt Structure Macros / Sectioning
+systeem         : markering deel gedefinieerd [deel]
+systeem         : markering deelnummer gedefinieerd [deelnummer]
+systeem         : markering hoofdstuk gedefinieerd [hoofdstuk]
+systeem         : markering hoofdstuknummer gedefinieerd [hoofdstuknummer]
+systeem         : markering paragraaf gedefinieerd [paragraaf]
+systeem         : markering paragraafnummer gedefinieerd [paragraafnummer]
+systeem         : markering subparagraaf gedefinieerd [subparagraaf]
+systeem         : markering subparagraafnummer gedefinieerd [subparagraafnummer
+]
+systeem         : markering subsubparagraaf gedefinieerd [subsubparagraaf]
+systeem         : markering subsubparagraafnummer gedefinieerd [subsubparagraaf
+nummer]
+systeem         : markering subsubsubparagraaf gedefinieerd [subsubsubparagraaf
+]
+systeem         : markering subsubsubparagraafnummer gedefinieerd [subsubsubpar
+agraafnummer]
+systeem         : markering subsubsubsubparagraaf gedefinieerd [subsubsubsubpar
+agraaf]
+systeem         : markering subsubsubsubparagraafnummer gedefinieerd [subsubsub
+subparagraafnummer]
+systeem         : markering titel gedefinieerd [titel]
+systeem         : markering titelnummer gedefinieerd [titelnummer]
+systeem         : markering onderwerp gedefinieerd [onderwerp]
+systeem         : markering onderwerpnummer gedefinieerd [onderwerpnummer]
+systeem         : markering subonderwerp gedefinieerd [subonderwerp]
+systeem         : markering subonderwerpnummer gedefinieerd [subonderwerpnummer
+]
+systeem         : markering subsubonderwerp gedefinieerd [subsubonderwerp]
+systeem         : markering subsubonderwerpnummer gedefinieerd [subsubonderwerp
+nummer]
+systeem         : markering subsubsubonderwerp gedefinieerd [subsubsubonderwerp
+]
+systeem         : markering subsubsubonderwerpnummer gedefinieerd [subsubsubond
+erwerpnummer]
+systeem         : markering subsubsubsubonderwerp gedefinieerd [subsubsubsubond
+erwerp]
+systeem         : markering subsubsubsubonderwerpnummer gedefinieerd [subsubsub
+subonderwerpnummer]
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-swd.m
+kii
+loading         : ConTeXt Structure Macros / Sectionworlds
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-blk.m
+kii
+loading         : ConTeXt Structure Macros / Blockmoves
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-imp.m
+kii
+loading         : ConTeXt Page Macros / Pagebody Building
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-tbl.m
+kii
+loading         : ConTeXt Table Macros / Tabulation
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/scrn-int.m
+kii
+loading         : ConTeXt Screen Macros / Interaction
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-ntb.m
+kii
+loading         : ConTeXt Table Macros / Natural Tables
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-nte.m
+kii
+loading         : ConTeXt Table Module / Natural Tables Extensions
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/tabl-ltb.m
+kii
+loading         : ConTeXt Table Macros / Line Tables
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-chi.m
+kii
+loading         : ConTeXt Language Macros / Chinese
+taal            : geen afbreekpatronen cn voor cn (n=30,e=default,m=default) (l
+ang-cn.pat,lang-cn.pat)
+taal            : geen afbreekdefinities cn voor cn (n=30,e=default,m=default)
+taal            : taal specifieke opties [default-cn] naadloos toegevoegd
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-jap.m
+kii
+loading         : ConTeXt Language Macros / Japanese
+taal            : geen afbreekpatronen ja voor ja (n=31,e=default,m=default) (l
+ang-ja.pat,lang-ja.pat)
+taal            : geen afbreekdefinities ja voor ja (n=31,e=default,m=default)
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/java-ini.m
+kii
+loading         : ConTeXt JavaScript Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/scrn-fld.m
+kii
+loading         : ConTeXt Screen Macros / Fields
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/scrn-hlp.m
+kii
+loading         : ConTeXt Screen Macros / Help popups
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-reg.m
+kii
+loading         : ConTeXt Structure Macros / Register Management
+Invalid UTF-8 byte or sequence at line 80 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 80 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 80 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 80 replaced by U+FFFD.
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/font-ini.m
+kii
+loading         : ConTeXt Font Macros / Initialization
+loading         : Postponed Plain TeX Font Definitions
+korps           : stijl mm (mm) gedefinieerd
+korps           : stijl rm (rm gedefinieerdromaanserifregular)
+korps           : stijl ss (ss gedefinieerdschreefloossanssupport)
+korps           : stijl tt (tt gedefinieerdteletypetypemono)
+korps           : stijl hw (hw gedefinieerdhandschrift)
+korps           : stijl cg (cg gedefinieerdcalligrafie)
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/font-xtx.m
+kii
+loading         : ConTeXt Font Macros / XeTeX Hacks
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/font-unk.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/font-uni.m
+kii
+loading         : ConTeXt Font Macros / Unicode
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/font-bfm.m
+kii
+loading         : ConTeXt Font Macros / Mixed Bold Math Support
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/enco-pfr.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-ini.m
+kii
+loading         : ConTeXt Typescript Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-set.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-def.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/prop-ini.m
+kii
+loading         : ConTeXt Property Macros / Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/prop-lay.m
+kii
+loading         : ConTeXt Property Macros / Layers
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/prop-mis.m
+kii
+loading         : ConTeXt Property Macros / Miscelaneous
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/meta-ini.m
+kii
+loading         : MetaPost Graphics / Initializations
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/meta-tex.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/meta-pdf.m
+kii
+loading         : MetaPost Graphics / MPS to PDF
+warning         : \count \nofMParguments is already defined (\relax it first)
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/meta-pag.m
+kii
+loading         : MetaPost Graphics / Page Data Management
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-flw.m
+kii
+loading         : ConTeXt Page Macros / Text Flows
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-spr.m
+kii
+loading         : ConTeXt Page Macros / Spreading
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-plg.m
+kii
+loading         : ConTeXt Page Macros / Extra Page Building
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-str.m
+kii
+loading         : ConTeXt Page Macros / Page Streams
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/anch-pgr.m
+kii
+loading         : ConTeXt Anchoring Macros / Grapics
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/anch-bar.m
+kii
+loading         : ConTeXt Anchoring Macros / Margin Bars
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/anch-snc.m
+kii
+loading         : ConTeXt Anchoring Macros / Synchronization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/math-pln.m
+kii
+loading         : ConTeXt Math Macros / Plain Helpers
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/math-ini.m
+kii
+loading         : ConTeXt Math Macros / Initializations
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/math-tex.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/math-ams.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/math-uni.m
+kii))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/math-arr.m
+kii
+loading         : ConTeXt Math Macros / Arrows
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/math-frc.m
+kii
+loading         : ConTeXt Math Macros / Fractions
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-fnt.m
+kii
+loading         : ConTeXt Core Macros / Fonts
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-not.m
+kii
+loading         : ConTeXt Structure Macros / Note Handling
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/strc-lnt.m
+kii
+loading         : ConTeXt Structure Macros / Line Notes
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-mis.m
+kii
+loading         : ConTeXt Core Macros / Misc Commands
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/grph-trf.m
+kii
+loading         : ConTeXt Graphic Macros / Transformations
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/grph-inc.m
+kii
+loading         : ConTeXt Graphic Macros / Figure Inclusion
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/grph-fig.m
+kii
+loading         : ConTeXt Graphic Macros / Figure Handling
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-par.m
+kii
+loading         : ConTeXt Core Macros / Pararaph Tricks
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/pack-box.m
+kii
+loading         : ConTeXt Packaging Macros / Boxes
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/page-app.m
+kii
+loading         : ConTeXt Page Macros / Applications
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/meta-fig.m
+kii
+loading         : MetaPost Graphics / Stand Alone Graphics
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/lang-spa.m
+kii
+loading         : ConTeXt Language Macros / Spacing
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/bibl-tra.m
+kii
+loading         : ConTeXt Bibliography Support / BibTeX
+publications    : loading formatting style from bibl-apa
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/bib/bibl-apa.te
+x))
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xtag-ini.m
+kii
+loading         : ConTeXt XML Macros / Initialization
+warning         : \toks \everyTEXinputmode is already defined (\relax it first)
+
+warning         : \toks \everyXMLinputmode is already defined (\relax it first)
+
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xtag-ext.m
+kii
+loading         : ConTeXt XML Macros / Extras
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xtag-exp.m
+kii
+loading         : ConTeXt XML Macros / Expansion
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xtag-pre.m
+kii
+loading         : ConTeXt XML Macros / Predefined
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xtag-xsd.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/xtag-rng.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/meta-xml.m
+kii
+loading         : MetaPost Graphics / XML Hacks
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/cont-log.m
+kii
+loading         : ConTeXt TeX Logos
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-ctx.m
+kii
+loading         : ConTeXt Core Macros / Job Control
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-ini.m
+kii
+loading         : ConTeXt Core Macros / Additional Initialization
+)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/core-def.m
+kii
+loading         : ConTeXt Core Macros / Defaults
+symbolen        : symboolset mis wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/symb-mis.m
+kii)
+symbolen        : symboolset mvs wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/symb-mvs.m
+kii)
+symbolen        : symboolset nav wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/symb-nav.m
+kii))
+systeem         : module res-12 (mkii) geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/x-res-12.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-siz.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-otf.m
+kii)
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/type-xtx.m
+kii))
+
+ConTeXt  ver: 2013.06.07 17:34 MKII  fmt: 2015.4.8  int: dutch/dutch
+
+specials        : definitiefile dvi wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spec-dvi.m
+kii)
+specials        : definitiefile ps wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spec-ps.mk
+ii)
+specials        : definitiefile tr wordt geladen
+
+(/var/www/vhosts/door43.org/tools/tex/texmf-context/tex/context/base/spec-tr.mk
+ii) ) )
+Beginning to dump on file cont-nl.fmt
+ (preloaded format=cont-nl 2015.4.8)
+107711 strings of total length 709026
+512704 memory locations dumped; current usage is 2751&503526
+39849 multiletter control sequences
+\font\nullfont=nullfont
+0 words of font info for 0 preloaded fonts
+489 hyphenation exceptions
+Hyphenation trie of length 192410 has 3233 ops out of 35111
+  138 for language 29
+  119 for language 28
+  185 for language 26
+  31 for language 25
+  78 for language 24
+  77 for language 22
+  7 for language 21
+  12 for language 20
+  71 for language 19
+  19 for language 18
+  248 for language 17
+  63 for language 16
+  194 for language 15
+  58 for language 14
+  7 for language 13
+  25 for language 12
+  37 for language 11
+  21 for language 10
+  165 for language 9
+  88 for language 8
+  224 for language 7
+  137 for language 6
+  127 for language 5
+  60 for language 4
+  400 for language 3
+  377 for language 2
+  265 for language 1
+No pages of output.
