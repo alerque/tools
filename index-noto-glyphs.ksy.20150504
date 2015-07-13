@@ -1,0 +1,41 @@
+#!/usr/bin/ksh
+export PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
+font_dir=/opt/context/tex/texmf/fonts/google/noto
+all_file=$font_dir/all-glyphs.txt
+tmp_index_file=/tmp/index.txt
+CreateGlyphLists () {
+    for ttfile in $(find $font_dir -type f -name '*.?tf' | fgrep -i 'notosans' | fgrep -i regular)
+    do
+        ttfdump $ttfile  | egrep -i 'char 0x' | awk '{print $2}'| sort -u > $ttfile.glyphs
+    done
+    cat /opt/context/tex/texmf/fonts/google/noto/*glyphs | sort -u > $all_file
+}
+CreateTempIndex () {
+    for glyph in $(cat $all_file)
+    do
+        echo $glyph $(fgrep $glyph /opt/context/tex/texmf/fonts/google/noto/*.glyphs | sed -e 's/\.glyphs//' | sed -e 's:^.*/::' | cut -d: -f1 | sort -u)
+    done > $tmp_index_file
+}
+CreateTheFallback () {
+    cat $tmp_index_file \
+	| fgrep 'SansReg' \
+        | awk   'BEGIN{lastname = ""; lastglyph = ""; firstglyph = ""}
+                 {
+                     glyph = $1
+                     currname = $2
+                     if (lastname != currname) {
+                         if (lastname != "") { print "\\setmainfontfallback[" lastname "][range=" firstglyph "-" lastglyph ",force=yes]" }
+                         firstglyph = glyph
+                     }
+                     lastglyph = glyph
+                     lastname = currname
+                 }
+                 END { print "\\setmainfontfallback[" lastname "][range=" firstglyph "-" lastglyph ",force=yes]" }'
+}
+#CreateGlyphLists
+#CreateTempIndex
+CreateTheFallback
+exit
+        | fgrep -v 0x00 \
+        | fgrep -v NotoSans-Regular.ttf \
+        | sed -e 's/[-]Regular\.[a-z]*//g' \

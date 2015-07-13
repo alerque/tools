@@ -1,0 +1,1683 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Global Initializations
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\enableregime[utf]
+\definepapersize [Trade][width=5.25in, height=8in]
+\setuppapersize [Trade][Trade]
+\setuppagenumbering [location={footer,middle}, conversion=numbers, alternative=doublesided,strut=yes]
+\mainlanguage[en]
+\usetypescript[pagella]
+\setupalign[hanging]
+\setupbodyfontenvironment[default][em=italic]
+\setupspacing[packed]   % normal word space at the end of sentences
+\setupwhitespace[none]  % no space between paragraphs
+\setupindenting[small, yes]
+\setuplayout[backspace=20mm,
+    topspace=36pt,
+    bottomspace=36pt,
+    header=0mm,
+    height=fit,
+    bottom=0mm,
+    footer=1mm]
+% Enables clickable URLS and TOC
+\setupinteraction
+   [state=start, color=, style=\tf]
+% Enables index in PDF document
+\placebookmarks[section]
+\setupinteractionscreen[option=bookmark]
+\setuphead[section][style=\tfd, number=no, before=\blank, after=\blank, align={middle, nothyphenated, verytolerant}]
+\definemakeup[storytitle][align=middle]
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Actual start of the document
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\starttext
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% The Front Matter
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\startfrontmatter % Intro material
+    % Title and Logo Page
+    \setupfooter [state=stop]
+    \startmakeup
+    \blank
+    {\midaligned { \externalfigure[https://api.unfoldingword.org/obs/jpg/1/uWOBSverticallogo1200w.png] } }
+    \blank
+    \stopmakeup
+    % Copyright and License Page
+    \setupfooter [state=stop]
+    \enableregime[utf]
+    \setupbodyfont[pagella, 10pt]
+    \setupinterlinespace[10pt][line=12pt] % Line spacing
+    %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  START-OF-FRONT-MATTER
+    \noindentation {\bf unfoldingWord \textbar \space OPEN BIBLE STORIES}
+    \blank
+    \noindentation {\bf an unrestricted visual mini-Bible in any language}
+    \blank
+    \noindentation \startplacefigure[location=nonumber]{\midaligned{\tfx{{\goto{http://openbiblestories.com}[url(http://openbiblestories.com)]}}}\stopalignment}\stopplacefigure
+    \blank
+    \noindentation Open Bible Stories, v. 3.1.1
+    \blank
+    \noindentation Created by Distant Shores Media (http:{\em distantshores.org) and the Door43 world missions community (http:}door43.org).
+    \blank
+    \blank
+    \noindentation {\bf License:}
+    \blank
+    \noindentation This work is made available under a Creative Commons Attribution-ShareAlike 4.0 International License \startplacefigure[location=nonumber]{\midaligned{\tfx{{\goto{http://creativecommons.org/licenses/by-sa/4.0/}[url(http://creativecommons.org/licenses/by-sa/4.0/)]}}}\stopalignment}\stopplacefigure
+    \blank
+    \noindentation You are free:
+    \blank
+    \startitemize
+    \item{{\bf Share} — copy and redistribute the material in any medium or format}
+    \stopitemize
+    \blank
+    \startitemize
+    \item{{\bf Adapt} — remix, transform, and build upon the material for any purpose, even commercially.}
+    \stopitemize
+    \blank
+    \noindentation Under the following conditions:
+    \blank
+    \startitemize
+    \item{{\bf Attribution} — You must attribute the work as follows: "Original work available at \startplacefigure[location=nonumber]{\midaligned{\tfx{{\goto{http://openbiblestories.com.}[url(http://openbiblestories.com.)]}}}\stopalignment}\stopplacefigure" Attribution statements in derivative works should not in any way suggest that we endorse you or your use of this work.}
+    \stopitemize
+    \blank
+    \startitemize
+    \item{{\bf ShareAlike} — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.}
+    \stopitemize
+    \blank
+    \noindentation Use of trademarks: {\bf unfoldingWord} is a trademark of Distant Shores Media and may not be included on any derivative works created from this content.  Unaltered content from \startplacefigure[location=nonumber]{\midaligned{\tfx{{\goto{http://openbiblestories.com}[url(http://openbiblestories.com)]}}}\stopalignment}\stopplacefigure must include the {\bf unfoldingWord} logo when distributed to others. But if you alter the content in any way, you must remove the {\bf unfoldingWord} logo before distributing your work.
+    \blank
+    \noindentation Attribution of artwork: All images used in these stories are © Sweet Publishing (www.sweetpublishing.com) and are made available under a Creative Commons Attribution-Share Alike License \startplacefigure[location=nonumber]{\midaligned{\tfx{{\goto{http://creativecommons.org/licenses/by-sa/3.0}[url(http://creativecommons.org/licenses/by-sa/3.0)]}}}\stopalignment}\stopplacefigure
+    \blank
+    \noindentation To our brothers and sisters in Christ all over the world—the global church. It is our prayer that God would use this visual overview of His Word to bless, strengthen, and encourage you.
+    \blank
+    %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  END-OF-FRONT-MATTER
+    %,,,\noindentation {\bf unfoldingWord \textbar \space OPEN BIBLE STORIES }
+    %,,,\blank
+    %,,,\noindentation {\bf \em an unrestricted visual mini-Bible in any language}
+    %,,,\blank
+    %,,,\noindentation \goto{http://openbiblestories.com}[url(http://openbiblestories.com)]
+    %,,,\blank
+    %,,,\noindentation Open Bible Stories, English, v. 3.1
+    %,,,\blank
+    %,,,\noindentation Created by Distant Shores Media \goto{https://distantshores.org}[url(https://distantshores.org)] and the Door43 world missions community \goto{https://door43.org}[url(https://door43.org)].
+    %,,,\blank
+    %,,,\setuphanging[location=left]
+    %,,,\starthanging{ \externalfigure[https://api.unfoldingword.org/obs/jpg/1/checkinglevels/uW-Level3-128px.png] }
+    %,,,{{\bf Checking level 3} \blank
+    %,,,{\em find out more at \goto{https://unfoldingword.org/quality}[url(https://unfoldingword.org/quality)] }}
+    %,,,\stophanging
+    %,,,\blank
+    %,,,\noindentation {\bf License: }
+    %,,,\noindentation This work is made available under a Creative Commons Attribution-ShareAlike 4.0 International License: \\ {\goto{http://creativecommons.org/licenses/by-sa/4.0/}[url(http://creativecommons.org/licenses/by-sa/4.0/)]}
+    %,,,\blank
+    %,,,\noindentation You are free to:
+    %,,,\startitemize
+    %,,,\item {\bf Share } — copy and redistribute the material in any medium or format
+    %,,,\item {\bf Adapt } — remix, transform, and build upon the material for any purpose, even commercially.
+    %,,,\stopitemize
+    %,,,\blank
+    %,,,\noindentation Under the following conditions:
+    %,,,\startitemize
+    %,,,\item {\bf Attribution } — You must attribute the work as follows: "Original work available at \goto{\midaligned http://openbiblestories.com}[url(http://openbiblestories.com)]." Attribution statements in derivative works should not in any way suggest that we endorse you or your use of this work.
+    %,,,\item {\bf ShareAlike } — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+    %,,,\stopitemize
+    %,,,\blank
+    %,,,\noindentation Use of trademarks: {\bf unfoldingWord } is a trademark of Distant Shores Media and may not be included on any derivative works created from this content. Unaltered content from \goto{http://openbiblestories.com}[url(http://openbiblestories.com)] must include the {\bf unfoldingWord } logo when distributed to others. But if you alter the content in any way, you must remove the {\bf unfoldingWord } logo before distributing your work.
+    %,,,\blank
+    %,,,\noindentation Attribution of artwork: All images used in these stories are © Sweet Publishing \goto{www.sweetpublishing.com}[url(www.sweetpublishing.com)] and are made available under a Creative Commons Attribution-Share Alike License \goto{http://creativecommons.org/licenses/by-sa/4.0/}[url(http://creativecommons.org/licenses/by-sa/3.0)].
+    %,,,\setupfooter [state=stop]
+    %,,,\setupbodyfont[pagella, 10.0pt]
+    %,,,\setupinterlinespace[10.0pt][line=13pt] % Line spacing
+    %,,,\startmakeup
+    %,,,\blank
+    %,,,{\em To our brothers and sisters in Christ all over the world—the global church. It is our prayer that God would use this visual overview of His Word to bless, strengthen, and encourage you.}
+    %,,,\blank
+    %,,,\stopmakeup
+    \blank
+    \setuphanging[location=left]
+    \starthanging{ \externalfigure[https://api.unfoldingword.org/obs/jpg/1/checkinglevels/uW-Level3-128px.png] }
+    {{\bf Checking level 3} \blank
+    {\em find out more at \goto{https://unfoldingword.org/quality}[url(https://unfoldingword.org/quality)] }}
+    \stophanging
+    %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    % Table of Contents
+    \page[1]
+    %\setuppagenumbering[location={footer,middle}, conversion=romannumerals, strut=yes]
+    \enableregime[utf]
+    \setupbodyfont[pagella, 12pt]
+    \setupinterlinespace[12pt][line=16pt] % Line spacing
+    %\setupcombinedlist[content][list={chapter}, alternative=c]
+    \setupfooter [state=start]
+    %\startcolor[darkgreen]
+    {\midaligned {\tfc{\WORD{Bible Stories}}}}
+    \placecontent[extras={22=page},alternative=c]
+    %\startcolor[black]
+    %\completecontent
+\stopfrontmatter
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\setuplayout[backspace=20mm,
+    topspace=10pt,
+    bottomspace=12pt,
+    header=0mm,
+    height=fit,
+    bottom=0mm,
+    footer=1mm]
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% The Body Matter
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\startbodymatter % The stories themselves
+    \setuptolerance[vertical,verytolerant,stretch]
+    \enableregime[utf]
+    \setupbodyfont[pagella, 10.0pt]
+    \setupinterlinespace[10.0pt][line=13pt] % Line spacing
+    %\setuppagenumbering[location={footer,middle}, conversion=numbers]
+    %\page[1, yes, disable]
+    \setupfooter [state=start]
+    %%
+    \newbox\toptry \newbox\bottry \newbox\topimg \newbox\botimg
+    \newtoks\toptxt \newtoks\bottxt
+    \def\dimenQuo#1#2{\dimexpr\number\numexpr\number\dimexpr#1\relax*65536/\number\dimexpr#2\relax\relax sp\relax}
+    \def\dimenProd#1#2{\dimexpr\number\numexpr\number\dimexpr#1\relax*\number\dimexpr#2\relax/65536\relax sp\relax}
+    \newdimen\imgneed \newdimen\txtneed \newdimen\txtroom \newdimen\need
+    \newdimen\leftover \newdimen\saveskip \newdimen\savesize \newdimen\nlines
+    \newdimen\ScaleFactor \newdimen\FigureTare
+    \topimg=\vbox{\placefigure[nonumber]{\\}{\\}}
+    \FigureTare=\dimexpr \ht\topimg \relax
+    \saveskip=\baselineskip
+    \savesize=\bodyfontsize
+    \newlinechar=`\^^
+    \message{TRACE: FigureTare=\the\FigureTare, saveskip=\the\saveskip, savesize=\the\saveskip ^^}
+    \def\shewend{\message{^^}}
+    \def\shew#1{\message{#1=\the#1}}
+    \def\shewbgn{\message{SHEW:~}}
+    %%
+\startmakeup
+\section{1. The Creation}
+\stopmakeup
+\message{TRACE: ================ 0 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={This is how the beginning of everything happened. God created the universe and everything in it in six days. After God created the earth it was dark and empty, and nothing had been formed in it. But God's Spirit was there over the water.}
+    \bottxt={Then God said, "Let there be light!" And there was light. God saw that the light was good and called it "day." He separated it from the darkness, which he called "night." God created the light on the first day of creation.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-01.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-02.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {This is how the beginning of everything happened. God created the universe and everything in it in six days. After God created the earth it was dark and empty, and nothing had been formed in it. But God's Spirit was there over the water. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-01.jpg]}
+\message{TRACE: ================ 1 ================
+
+    \placefigure[nonumber]
+      {Then God said, "Let there be light!" And there was light. God saw that the light was good and called it "day." He separated it from the darkness, which he called "night." God created the light on the first day of creation. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-02.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 2 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={On the second day of creation, God spoke and created the sky above the earth. He made the sky by separating the water above from the water below.}
+    \bottxt={On the third day, God spoke and separated the water from the dry land. He called the dry land "earth," and he called the water "seas." God saw that what he had created was good.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-03.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-04.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {On the second day of creation, God spoke and created the sky above the earth. He made the sky by separating the water above from the water below. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-03.jpg]}
+\message{TRACE: ================ 3 ================
+
+    \placefigure[nonumber]
+      {On the third day, God spoke and separated the water from the dry land. He called the dry land "earth," and he called the water "seas." God saw that what he had created was good. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-04.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 4 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={Then God said, "Let the earth produce all kinds of trees and plants." And that is what happened. God saw that what he had created was good.}
+    \bottxt={On the fourth day of creation, God spoke and made the sun, the moon, and the stars. God made them to give light to the earth and to mark day and night, seasons and years. God saw that what he had created was good.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-05.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-06.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {Then God said, "Let the earth produce all kinds of trees and plants." And that is what happened. God saw that what he had created was good. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-05.jpg]}
+\message{TRACE: ================ 5 ================
+
+    \placefigure[nonumber]
+      {On the fourth day of creation, God spoke and made the sun, the moon, and the stars. God made them to give light to the earth and to mark day and night, seasons and years. God saw that what he had created was good. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-06.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 6 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={On the fifth day, God spoke and made everything that swims in the water and all the birds. God saw that it was good, and he blessed them.}
+    \bottxt={On the sixth day of creation, God said, "Let there be all kinds of land animals!" And it happened just like God said. Some were farm animals, some crawled on the ground, and some were wild. And God saw that it was good.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-07.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-08.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {On the fifth day, God spoke and made everything that swims in the water and all the birds. God saw that it was good, and he blessed them. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-07.jpg]}
+\message{TRACE: ================ 7 ================
+
+    \placefigure[nonumber]
+      {On the sixth day of creation, God said, "Let there be all kinds of land animals!" And it happened just like God said. Some were farm animals, some crawled on the ground, and some were wild. And God saw that it was good. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-08.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 8 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={Then God said, "Let us make human beings in our image to be like us. They will have authority over the earth and all the animals."}
+    \bottxt={So God took some dirt, formed it into a man, and breathed life into him. This man's name was Adam. God planted a garden where Adam could live, and put him there to care for it.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-09.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-10.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {Then God said, "Let us make human beings in our image to be like us. They will have authority over the earth and all the animals." \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-09.jpg]}
+\message{TRACE: ================ 9 ================
+
+    \placefigure[nonumber]
+      {So God took some dirt, formed it into a man, and breathed life into him. This man's name was Adam. God planted a garden where Adam could live, and put him there to care for it. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-10.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 10 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={In the middle of the garden, God planted two special trees—the tree of life and the tree of the knowledge of good and evil. God told Adam that he could eat from any tree in the garden except from the tree of the knowledge of good and evil. If he ate from this tree, he would die.}
+    \bottxt={Then God said, "It is not good for man to be alone." But none of the animals could be Adam's helper.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-11.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-12.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {In the middle of the garden, God planted two special trees—the tree of life and the tree of the knowledge of good and evil. God told Adam that he could eat from any tree in the garden except from the tree of the knowledge of good and evil. If he ate from this tree, he would die. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-11.jpg]}
+\message{TRACE: ================ 11 ================
+
+    \placefigure[nonumber]
+      {Then God said, "It is not good for man to be alone." But none of the animals could be Adam's helper. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-12.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 12 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={So God made Adam fall into a deep sleep. Then God took one of Adam's ribs and made it into a woman and brought her to him.}
+    \bottxt={When Adam saw her, he said, "At last! This one is like me! Let her be called 'Woman,' for she was made from Man." This is why a man leaves his father and mother and becomes one with his wife.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-13.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-14.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {So God made Adam fall into a deep sleep. Then God took one of Adam's ribs and made it into a woman and brought her to him. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-13.jpg]}
+\message{TRACE: ================ 13 ================
+
+    \placefigure[nonumber]
+      {When Adam saw her, he said, "At last! This one is like me! Let her be called 'Woman,' for she was made from Man." This is why a man leaves his father and mother and becomes one with his wife. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-14.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 14 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={God made man and woman in his own image. He blessed them and told them, "Have many children and grandchildren and fill the earth!" And God saw that everything he had made was very good, and he was very pleased with all of it. This all happened on the sixth day of creation.}
+    \bottxt={When the seventh day came, God had finished his work. So God rested from all he had been doing. He blessed the seventh day and made it holy, because on this day he rested from his work. This is how God created the universe and everything in it.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-15.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-16.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {God made man and woman in his own image. He blessed them and told them, "Have many children and grandchildren and fill the earth!" And God saw that everything he had made was very good, and he was very pleased with all of it. This all happened on the sixth day of creation. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-15.jpg]}
+\message{TRACE: ================ 15 ================
+
+    \placefigure[nonumber]
+      {When the seventh day came, God had finished his work. So God rested from all he had been doing. He blessed the seventh day and made it holy, because on this day he rested from his work. This is how God created the universe and everything in it. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-01-16.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\startplacefigure[location=nonumber]
+  {\startalignment[middle] { \tfx {{\em A Bible story from: Genesis 1-2}}} \stopalignment }
+\stopplacefigure
+\startmakeup
+\section{2. Sin Enters the World}
+\stopmakeup
+\message{TRACE: ================ 0 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={Adam and his wife were very happy living in the beautiful garden God had made for them. Neither of them wore clothes, but this did not cause them to feel any shame, because there was no sin in the world. They often walked in the garden and talked with God.}
+    \bottxt={But there was a crafty snake in the garden. He asked the woman, "Did God really tell you not to eat the fruit from any of the trees in the garden?"}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-01.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-02.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {Adam and his wife were very happy living in the beautiful garden God had made for them. Neither of them wore clothes, but this did not cause them to feel any shame, because there was no sin in the world. They often walked in the garden and talked with God. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-01.jpg]}
+\message{TRACE: ================ 1 ================
+
+    \placefigure[nonumber]
+      {But there was a crafty snake in the garden. He asked the woman, "Did God really tell you not to eat the fruit from any of the trees in the garden?" \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-02.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 2 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={The woman answered, "God told us we could eat the fruit of any tree except from the tree of the knowledge of good and evil. God told us, 'If you eat that fruit or even touch it, you will die.'"}
+    \bottxt={The snake responded to the woman, "That is not true! You will not die. God just knows that as soon as you eat it, you will be like God and will understand good and evil like he does."}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-03.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-04.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {The woman answered, "God told us we could eat the fruit of any tree except from the tree of the knowledge of good and evil. God told us, 'If you eat that fruit or even touch it, you will die.'" \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-03.jpg]}
+\message{TRACE: ================ 3 ================
+
+    \placefigure[nonumber]
+      {The snake responded to the woman, "That is not true! You will not die. God just knows that as soon as you eat it, you will be like God and will understand good and evil like he does." \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-04.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 4 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={The woman saw that the fruit was beautiful and looked delicious. She also wanted to be wise, so she picked some of the fruit and ate it. Then she gave some to her husband, who was with her, and he ate it, too.}
+    \bottxt={Suddenly, their eyes were opened, and they realized they were naked. They tried to cover their bodies by sewing leaves together to make clothes.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-05.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-06.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {The woman saw that the fruit was beautiful and looked delicious. She also wanted to be wise, so she picked some of the fruit and ate it. Then she gave some to her husband, who was with her, and he ate it, too. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-05.jpg]}
+\message{TRACE: ================ 5 ================
+
+    \placefigure[nonumber]
+      {Suddenly, their eyes were opened, and they realized they were naked. They tried to cover their bodies by sewing leaves together to make clothes. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-06.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 6 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={Then the man and his wife heard the sound of God walking through the garden. They both hid from God. Then God called to the man, "Where are you?" Adam replied, "I heard you walking in the garden, and I was afraid, because I was naked. So I hid."}
+    \bottxt={Then God asked, "Who told you that you were naked? Did you eat the fruit I told you not to eat?" The man answered, "You gave me this woman, and she gave me the fruit." Then God asked the woman, "What have you done?" The woman replied, "The snake tricked me."}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-07.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-08.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {Then the man and his wife heard the sound of God walking through the garden. They both hid from God. Then God called to the man, "Where are you?" Adam replied, "I heard you walking in the garden, and I was afraid, because I was naked. So I hid." \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-07.jpg]}
+\message{TRACE: ================ 7 ================
+
+    \placefigure[nonumber]
+      {Then God asked, "Who told you that you were naked? Did you eat the fruit I told you not to eat?" The man answered, "You gave me this woman, and she gave me the fruit." Then God asked the woman, "What have you done?" The woman replied, "The snake tricked me." \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-08.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 8 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={God said to the snake, "You are cursed! You will slide on your belly and eat dirt. You and the woman will hate each other, and your children and her children will hate each other, too. The woman's descendant will crush your head, and you will wound his heel."}
+    \bottxt={God then said to the woman, "I will make childbirth very painful for you. You will desire your husband, and he will rule over you."}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-09.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-10.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {God said to the snake, "You are cursed! You will slide on your belly and eat dirt. You and the woman will hate each other, and your children and her children will hate each other, too. The woman's descendant will crush your head, and you will wound his heel." \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-09.jpg]}
+\message{TRACE: ================ 9 ================
+
+    \placefigure[nonumber]
+      {God then said to the woman, "I will make childbirth very painful for you. You will desire your husband, and he will rule over you." \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-10.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 10 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={God said to the man, "You listened to your wife and disobeyed me. Now the ground is cursed, and you will need to work hard to grow food. Then you will die, and your body will return to dirt." The man named his wife Eve, which means "life-giver," because she would become the mother of all people. And God clothed Adam and Eve with animal skins.}
+    \bottxt={Then God said, "Now that the human beings have become like us by knowing good and evil, they must not be allowed to eat the fruit of the tree of life and live forever." So God sent Adam and Eve away from the beautiful garden. God placed powerful angels at the entrance to the garden to keep anyone from eating the fruit of the tree of life.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-11.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-12.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {God said to the man, "You listened to your wife and disobeyed me. Now the ground is cursed, and you will need to work hard to grow food. Then you will die, and your body will return to dirt." The man named his wife Eve, which means "life-giver," because she would become the mother of all people. And God clothed Adam and Eve with animal skins. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-11.jpg]}
+\message{TRACE: ================ 11 ================
+
+    \placefigure[nonumber]
+      {Then God said, "Now that the human beings have become like us by knowing good and evil, they must not be allowed to eat the fruit of the tree of life and live forever." So God sent Adam and Eve away from the beautiful garden. God placed powerful angels at the entrance to the garden to keep anyone from eating the fruit of the tree of life. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-02-12.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\startplacefigure[location=nonumber]
+  {\startalignment[middle] { \tfx {{\em A Bible story from: Genesis 3}}} \stopalignment }
+\stopplacefigure
+\startmakeup
+\section{3. The Flood}
+\stopmakeup
+\message{TRACE: ================ 0 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={After a long time, many people were living in the world. They had become very wicked and violent. It became so bad that God decided to destroy the whole world with a huge flood.}
+    \bottxt={But Noah found favor with God. He was a righteous man, living among wicked people. God told Noah about the flood He was planning to send. He told Noah to build a huge boat.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-01.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-02.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {After a long time, many people were living in the world. They had become very wicked and violent. It became so bad that God decided to destroy the whole world with a huge flood. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-01.jpg]}
+\message{TRACE: ================ 1 ================
+
+    \placefigure[nonumber]
+      {But Noah found favor with God. He was a righteous man, living among wicked people. God told Noah about the flood He was planning to send. He told Noah to build a huge boat. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-02.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 2 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={God told Noah to make the boat about 140 meters long, 23 meters wide, and 13.5 meters high. Noah was to build it with wood and to make three levels, many rooms, a roof, and a window. The boat would keep Noah, his family, and every kind of land animal safe during the flood.}
+    \bottxt={Noah obeyed God. He and his three sons built the boat just the way God had told them. It took many years to build the boat, because it was so big. Noah warned the people about the flood that was coming and told them to turn to God, but they did not believe him.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-03.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-04.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {God told Noah to make the boat about 140 meters long, 23 meters wide, and 13.5 meters high. Noah was to build it with wood and to make three levels, many rooms, a roof, and a window. The boat would keep Noah, his family, and every kind of land animal safe during the flood. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-03.jpg]}
+\message{TRACE: ================ 3 ================
+
+    \placefigure[nonumber]
+      {Noah obeyed God. He and his three sons built the boat just the way God had told them. It took many years to build the boat, because it was so big. Noah warned the people about the flood that was coming and told them to turn to God, but they did not believe him. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-04.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 4 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={God also commanded Noah and his family to gather enough food for themselves and the animals. When everything was ready, God told Noah it was time for him, his wife, his three sons, and their wives to get into the boat—eight people in all.}
+    \bottxt={God sent a male and a female of every animal and bird to Noah so they could go into the boat and be kept safe during the flood. God sent seven males and seven females of every type of animal that could be used for sacrifices. When they were all in the boat, God himself closed the door.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-05.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-06.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {God also commanded Noah and his family to gather enough food for themselves and the animals. When everything was ready, God told Noah it was time for him, his wife, his three sons, and their wives to get into the boat—eight people in all. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-05.jpg]}
+\message{TRACE: ================ 5 ================
+
+    \placefigure[nonumber]
+      {God sent a male and a female of every animal and bird to Noah so they could go into the boat and be kept safe during the flood. God sent seven males and seven females of every type of animal that could be used for sacrifices. When they were all in the boat, God himself closed the door. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-06.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 6 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={Then it began to rain, and rain, and rain. It rained for forty days and forty nights without stopping! Water also came gushing up out of the earth. Everything in the whole world was covered with water, even the highest mountains.}
+    \bottxt={Everything that lived on the dry land died, except the people and animals that were in the boat. The boat floated on the water and kept everything inside the boat safe from drowning.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-07.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-08.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {Then it began to rain, and rain, and rain. It rained for forty days and forty nights without stopping! Water also came gushing up out of the earth. Everything in the whole world was covered with water, even the highest mountains. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-07.jpg]}
+\message{TRACE: ================ 7 ================
+
+    \placefigure[nonumber]
+      {Everything that lived on the dry land died, except the people and animals that were in the boat. The boat floated on the water and kept everything inside the boat safe from drowning. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-08.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 8 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={After the rains stopped, the boat floated on the water for five months, and during this time the water started going down. Then one day the boat rested on the top of a mountain, but the world was still covered with water. After three more months, the tops of the mountains were visible.}
+    \bottxt={After forty more days, Noah sent out a bird called a raven to see if the water had dried up. The raven flew back and forth looking for dry land, but it could not find any.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-09.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-10.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {After the rains stopped, the boat floated on the water for five months, and during this time the water started going down. Then one day the boat rested on the top of a mountain, but the world was still covered with water. After three more months, the tops of the mountains were visible. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-09.jpg]}
+\message{TRACE: ================ 9 ================
+
+    \placefigure[nonumber]
+      {After forty more days, Noah sent out a bird called a raven to see if the water had dried up. The raven flew back and forth looking for dry land, but it could not find any. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-10.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 10 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={Later Noah sent out a bird called a dove. But it also could not find any dry land, so it came back to Noah. A week later he sent the dove out again, and it came back with an olive branch in its beak! The water was going down, and the plants were growing again!}
+    \bottxt={Noah waited another week and sent out the dove a third time. This time, it found a place to rest and did not come back. The water was drying up!}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-11.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-12.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {Later Noah sent out a bird called a dove. But it also could not find any dry land, so it came back to Noah. A week later he sent the dove out again, and it came back with an olive branch in its beak! The water was going down, and the plants were growing again! \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-11.jpg]}
+\message{TRACE: ================ 11 ================
+
+    \placefigure[nonumber]
+      {Noah waited another week and sent out the dove a third time. This time, it found a place to rest and did not come back. The water was drying up! \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-12.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 12 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={Two months later God said to Noah, "You and your family and all the animals may leave the boat now. Have many children and grandchildren and fill the earth." So Noah and his family came out of the boat.}
+    \bottxt={After Noah got off the boat, he built an altar and sacrificed some of each kind of animal that could be used for a sacrifice. God was happy with the sacrifice and blessed Noah and his family.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-13.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-14.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {Two months later God said to Noah, "You and your family and all the animals may leave the boat now. Have many children and grandchildren and fill the earth." So Noah and his family came out of the boat. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-13.jpg]}
+\message{TRACE: ================ 13 ================
+
+    \placefigure[nonumber]
+      {After Noah got off the boat, he built an altar and sacrificed some of each kind of animal that could be used for a sacrifice. God was happy with the sacrifice and blessed Noah and his family. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-14.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\message{TRACE: ================ 14 ================
+    \baselineskip=\saveskip
+    \bodyfontsize=\savesize
+    \toptxt={God said, "I promise I will never again curse the ground because of the evil things that people do, or destroy the world by causing a flood, even though people are sinful from the time they are children."}
+    \bottxt={God then made the first rainbow as a sign of his promise. Every time the rainbow appeared in the sky, God would remember what he promised and so would his people.}
+    \setbox\topimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-15.jpg]}}
+    \setbox\botimg=\vbox{      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-16.jpg]}}
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \message{TRACE: parts, \the\ht\topimg, \the\ht\toptry,  \the\ht\botimg, \the\ht\bottry, room, \the\txtroom, \the\txtneed, \the\ScaleFactor ^^}
+    \ifdim \ScaleFactor < 0.5pt
+        \baselineskip=\dimexpr \baselineskip * 0.88pt / 65536sp \relax
+        \bodyfontsize=9.0pt
+        \message{WARNING: Font size scaled-down on page #\the\pageno in en version to fit both frames on the page}
+    \else \ifdim \ScaleFactor > 1.5pt
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{1.5pt} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor > 1.5}
+    \else
+        \baselineskip=\dimexpr \dimenProd{\baselineskip}{\ScaleFactor} \relax
+        \message{NOTE: Baseline skip scaled-up from \the\saveskip to \the\baselineskip on page #\the\pageno in en version due to scale-factor=\the\ScaleFactor}
+    \fi \fi
+    \setbox\toptry=\vbox{\the\toptxt\\}
+    \setbox\bottry=\vbox{\the\bottxt\\}
+    \imgneed=\dimexpr \ht\topimg + \ht\botimg \relax
+    \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+    \need=\dimexpr \txtneed + \imgneed \relax
+    \leftover=\dimexpr \vsize - \need \relax
+    \txtroom=\dimexpr \txtneed + \leftover \relax
+    \shewbgn \shew{\toptxt} \shewend
+    \shewbgn \shew{\bottxt} \shewend
+    \shewbgn \shew{\ht\toptry} \shew{\ht\bottry}\shewend
+    \ScaleFactor=\dimexpr \dimenQuo{\txtroom}{\txtneed} \relax % for trace printing
+    \shewbgn\shew\imgneed \shew\txtneed \shew\need \shew\vsize  \shew\leftover\shewend
+    \shewbgn\shew\txtroom \shew\txtneed \shew\ScaleFactor \shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \message{TRACE: leftover=\the\leftover ^^}
+    \shewbgn\shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor\shewend
+    \shewbgn\shew\bodyfontsize \shew\baselineskip\shewend
+    \ifdim \vsize < \the\need \relax
+    \message{WARNING: No room for both frames on page #\the\pageno in en version}
+    \fi
+\vbox{
+
+    \placefigure[nonumber]
+      {God said, "I promise I will never again curse the ground because of the evil things that people do, or destroy the world by causing a flood, even though people are sinful from the time they are children." \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-15.jpg]}
+\message{TRACE: ================ 15 ================
+
+    \placefigure[nonumber]
+      {God then made the first rainbow as a sign of his promise. Every time the rainbow appeared in the sky, God would remember what he promised and so would his people. \blank[small, flexible]}
+      {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-16.jpg]}
+}
+    \baselineskip=\saveskip \bodyfontsize=\savesize
+\startplacefigure[location=nonumber]
+  {\startalignment[middle] { \tfx {{\em A Bible story from: Genesis 6-8}}} \stopalignment }
+\stopplacefigure
+\stopbodymatter % The stories themselves
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% The Back Matter
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\startbackmatter
+    %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  START-OF-BACK-MATTER
+    \noindentation \underbar{\bf Get Involved!}
+    \blank
+    \noindentation We want to make this visual mini-Bible available in \color[middlered]{every language of the world} and you can help! This is not impossible—we think it can happen if the whole body of Christ works together to translate & distribute this resource. 
+    \blank
+    \noindentation \underbar{\bf Share Freely}
+    \blank
+    \noindentation Give as many copies of this book away as you want, without restriction. All digital versions are free online, and because of the open license we are using, you can even republish Open Bible Stories commercially anywhere in the world without paying royalties! Find out more at \startplacefigure[location=nonumber]{\midaligned{\tfx{{\goto{http://openbiblestories.com.}[url(http://openbiblestories.com.)]}}}\stopalignment}\stopplacefigure
+    \blank
+    \noindentation \underbar{\bf Extend!}
+    \blank
+    \noindentation Get Open Bible Stories as videos and mobile phone applications in other languages at \startplacefigure[location=nonumber]{\midaligned{\tfx{{\goto{http://openbiblestories.com.}[url(http://openbiblestories.com.)]}}}\stopalignment}\stopplacefigure On the website, you can also get help translating Open Bible Stories into \color[middlered]{your} language.
+    \blank
+    %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  END-OF-BACK-MATTER
+\stopbackmatter
+\stoptext
