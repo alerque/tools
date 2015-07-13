@@ -1,0 +1,4 @@
+obs/book/publish_PDF.sh -l en -v 3testDPB
+ls -ltd /var/www/vhosts/api.unfoldingword.org/httpdocs/obs/txt/1/en/
+. /opt/context/tex/setuptex
+
