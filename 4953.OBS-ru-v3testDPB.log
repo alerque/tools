@@ -1,0 +1,232 @@
+fonts           > injections > using experimental injector
+
+open source     > 1 > 1 > /opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv
+
+ConTeXt  ver: 2014.12.11 12:02 MKIV beta  fmt: 2014.12.15  int: english/english
+
+system          > 'cont-new.mkiv' loaded
+open source     > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+close source    > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+system          > files > jobname '4953.OBS-ru-v3testDPB', input '/tmp/4953.OBS-ru-v3testDPB', result '4953'
+fonts           > latin modern fonts are not preloaded
+languages       > language 'en' is active
+open source     > 2 > 3 > /tmp/4953.OBS-ru-v3testDPB.tex
+fonts           > preloading latin modern fonts (second stage)
+fonts           > 'fallback modern-designsize rm 12pt' is loaded
+structures      > begin of sectionblock 'frontpart'
+backend         > xmp > using file '/opt/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml'
+pages           > flushing realpage 1, userpage 1
+open source     > 3 > 4 > /opt/context/tex/texmf-context/tex/context/base/type-imp-texgyre.mkiv
+close source    > 3 > 4 > /opt/context/tex/texmf-context/tex/context/base/type-imp-texgyre.mkiv
+
+Overfull \hbox (6.99269pt too wide) in paragraph at lines 57--59
+[]\3>pagella-8pt-rm-tf-0--0 Создана Dis-tant Shores Me-dia ([[http:\3>pagella-8pt-rm-it-0--0 dis-tantshores.org \3>pagella-8pt-mm-mb--1 | \3>pagella-8pt-rm-it-0--0 http:\3>pagella-8pt-rm-tf-0--0 distantshores.org]]) и сообществом мировых миссий Door43
+
+\hbox(5.864+2.264)x271.01001, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\3>pagella-8pt-rm-tf-0--0 С
+.\3>pagella-8pt-rm-tf-0--0 о
+.\3>pagella-8pt-rm-tf-0--0 з
+.\3>pagella-8pt-rm-tf-0--0 д
+.etc.
+
+
+Overfull \hbox (21.8567pt too wide) in paragraph at lines 61--63
+\3>pagella-8pt-rm-it-0--0 ativecom-mons.org/li-censes/by-sa/3.0 \3>pagella-8pt-mm-mb--1 | \3>pagella-8pt-rm-it-0--0 http:\3>pagella-8pt-rm-tf-0--0 creativecommons.org/licenses/by-sa/3.0]]). 
+
+\hbox(5.864+2.264)x271.01001, glue set - 1.0, direction TLT
+.\3>pagella-8pt-rm-it-0--0 a
+.\3>pagella-8pt-rm-it-0--0 t
+.\3>pagella-8pt-rm-it-0--0 i
+.\3>pagella-8pt-rm-it-0--0 v
+.\kern -0.12
+.etc.
+
+floatblocks     > '1' placed
+
+Overfull \hbox (37.17848pt too wide) in paragraph at lines 78--80
+[]\3>pagella-8pt-rm-tf-0--0 Использование товарных знаков: раскрывающеесяСлово – это товарный логотип Dis-tant Shores Me-dia и не может быть использован ни на каких производных работах, созданных на основе данного содержания. Неизменное содержание с [[http:\3>pagella-8pt-rm-it-0--0 open-biblesto-ries.com \3>pagella-8pt-mm-mb--1 | \3>pagella-8pt-rm-it-0--0 http:\3>pagella-8pt-rm-tf-0--0 openbiblestories.com]]
+
+\hbox(5.864+2.248)x271.01001, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\3>pagella-8pt-rm-tf-0--0 И
+.\3>pagella-8pt-rm-tf-0--0 с
+.\3>pagella-8pt-rm-tf-0--0 п
+.\3>pagella-8pt-rm-tf-0--0 о
+.etc.
+
+floatblocks     > '2' placed
+
+Overfull \hbox (55.80872pt too wide) in paragraph at lines 80--83
+\3>pagella-8pt-rm-tf-0--0 ([[http:\3>pagella-8pt-rm-it-0--0 cre-ativecom-mons.org/li-censes/by-sa/3.0 \3>pagella-8pt-mm-mb--1 | \3>pagella-8pt-rm-it-0--0 http:\3>pagella-8pt-rm-tf-0--0 creativecommons.org/licenses/by-sa/3.0]]). 
+
+\hbox(5.864+2.264)x271.01001, glue set - 1.0, direction TLT
+.\3>pagella-8pt-rm-tf-0--0 (
+.\3>pagella-8pt-rm-tf-0--0 [
+.\3>pagella-8pt-rm-tf-0--0 [
+.\3>pagella-8pt-rm-tf-0--0 h
+.\3>pagella-8pt-rm-tf-0--0 t
+.etc.
+
+pages           > flushing realpage 2, userpage 2
+structures      > end of sectionblock 'frontpart'
+pages           > flushing realpage 3, userpage 3
+pages           > flushing realpage 4, userpage 4
+structures      > begin of sectionblock 'bodypart'
+fonts           > bodyfont '8.5pt' is defined (can better be done global)
+fonts           > bodyfont '10.2pt' is defined (can better be done global)
+fonts           > bodyfont '6.8pt' is defined (can better be done global)
+structure       > sectioning > section @ level 3 : 0.0.1 -> 1. Сотворение мира
+pages           > flushing realpage 5, userpage 5
+\ht \toptry =3.6635pt \ht \bottry =6.086pt10 \imgneed =346.896pt \txtneed =9.7495pt \need =356.6455pt \vsize =553.31473pt \leftover =196.66924pt \txtroom =206.41873pt \txtneed =9.7495pt \ScaleFactor =0.00645pt10 \bodyfontsize =8.5pt \baselineskip =10.2578pt10 WARNING: Font size scaled-down on page ##\pageno in ru version to fit both frames on the page\newlinechar  \imgneed =346.896pt \txtneed =9.7495pt \need =356.6455pt \vsize =553.31473pt \leftover =196.66924pt \txtroom =206.41873pt \ScaleFactor =0.00645pt \bodyfontsize =7.5pt \baselineskip =0.0pt10
+floatblocks     > '3' placed
+floatblocks     > '4' placed
+\ht \toptry =0.901pt \ht \bottry =4.1055pt10 \imgneed =346.896pt \txtneed =5.0065pt \need =351.9025pt \vsize =553.31473pt \leftover =201.41223pt \txtroom =206.41873pt \txtneed =5.0065pt \ScaleFactor =0.01259pt10 \bodyfontsize =8.5pt \baselineskip =0.0pt10 \imgneed =346.896pt \txtneed =5.0065pt \need =351.9025pt \vsize =553.31473pt \leftover =201.41223pt \txtroom =206.41873pt \ScaleFactor =0.01259pt \bodyfontsize =8.5pt \baselineskip =0.0pt10
+floatblocks     > '5' placed
+floatblocks     > '6' placed
+floatblocks     > '7' placed
+floatblocks     > '8' placed
+floatblocks     > '9' placed
+floatblocks     > '10' placed
+floatblocks     > '11' placed
+floatblocks     > '12' placed
+floatblocks     > '13' placed
+floatblocks     > '14' placed
+floatblocks     > '15' placed
+floatblocks     > '16' placed
+floatblocks     > '17' placed
+floatblocks     > '18' placed
+
+Overfull \hbox (76.19768pt too wide) in paragraph at lines 199--351
+[][]\3>pagella-8.5pt-mm-mr--1 .88pt / 0.0003pt   []
+
+\hbox(427.1481+2.125)x271.01001, glue set - 1.0, direction TLT
+.\whatsit
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x12.0, direction TLT
+.\3>pagella-8.5pt-mm-mr--1 .
+.\3>pagella-8.5pt-mm-mr--1 8
+.\3>pagella-8.5pt-mm-mr--1 8
+.etc.
+
+pages           > flushing realpage 6, userpage 6
+pages           > flushing realpage 7, userpage 7
+pages           > flushing realpage 8, userpage 8
+pages           > flushing realpage 9, userpage 9
+pages           > flushing realpage 10, userpage 10
+pages           > flushing realpage 11, userpage 11
+pages           > flushing realpage 12, userpage 12
+floatblocks     > '19' placed
+pages           > flushing realpage 13, userpage 13
+structure       > sectioning > section @ level 3 : 0.0.2 -> 2. В мир приходит грех
+pages           > flushing realpage 14, userpage 14
+\ht \toptry =0.901pt \ht \bottry =5.9925pt10 \imgneed =346.896pt \txtneed =6.8935pt \need =353.78949pt \vsize =553.31473pt \leftover =199.52524pt \txtroom =206.41873pt \txtneed =6.8935pt \ScaleFactor =0.00914pt10 \bodyfontsize =8.5pt \baselineskip =0.0pt10
+
+tex error       > error on line 375 in file /tmp/4953.OBS-ru-v3testDPB.tex: ! Missing number, treated as zero
+
+<to be read again> 
+\relax 
+l.375 ...expr \baselineskip * 0.88pt / \fudge \relax
+                                                  
+
+365         \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+366         \need=\dimexpr \txtneed + \imgneed \relax
+367         \leftover=\dimexpr \vsize - \need \relax
+368         \txtroom=\dimexpr \txtneed + \leftover \relax
+369         \shew{\ht\toptry} \shewn{\ht\bottry}
+370         \ScaleFactor=\dimexpr \fudge * \txtroom / \txtneed \relax
+371         \shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover
+372         \shew\txtroom \shew \txtneed \shewn\ScaleFactor
+373         \shew\bodyfontsize \shewn\baselineskip
+374         \ifdim \ScaleFactor < \lowend
+375 >>          \baselineskip=\dimexpr \baselineskip * 0.88pt / \fudge \relax
+376             \bodyfontsize=7.5pt
+377             \message{WARNING: Font size scaled-down on page #\pageno in ru version to fit both frames on the page\newlinechar}
+378         \else \ifdim \ScaleFactor > \highend
+379             \baselineskip=\dimexpr \baselineskip * 1.5pt / \fudge \relax
+380         \else
+381             \baselineskip=\dimexpr \baselineskip * \ScaleFactor / \fudge \relax
+382         \fi \fi
+383         \shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor
+384         \shew\bodyfontsize \shewn\baselineskip
+385         \setbox\toptry=\vbox{\the\toptxt}
+
+
+? 
+
+tex error       > error on line 375 in file /tmp/4953.OBS-ru-v3testDPB.tex: ! Interruption
+
+l.375 ...expr \baselineskip * 0.88pt / \fudge \relax
+                                                  
+
+365         \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+366         \need=\dimexpr \txtneed + \imgneed \relax
+367         \leftover=\dimexpr \vsize - \need \relax
+368         \txtroom=\dimexpr \txtneed + \leftover \relax
+369         \shew{\ht\toptry} \shewn{\ht\bottry}
+370         \ScaleFactor=\dimexpr \fudge * \txtroom / \txtneed \relax
+371         \shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover
+372         \shew\txtroom \shew \txtneed \shewn\ScaleFactor
+373         \shew\bodyfontsize \shewn\baselineskip
+374         \ifdim \ScaleFactor < \lowend
+375 >>          \baselineskip=\dimexpr \baselineskip * 0.88pt / \fudge \relax
+376             \bodyfontsize=7.5pt
+377             \message{WARNING: Font size scaled-down on page #\pageno in ru version to fit both frames on the page\newlinechar}
+378         \else \ifdim \ScaleFactor > \highend
+379             \baselineskip=\dimexpr \baselineskip * 1.5pt / \fudge \relax
+380         \else
+381             \baselineskip=\dimexpr \baselineskip * \ScaleFactor / \fudge \relax
+382         \fi \fi
+383         \shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor
+384         \shew\bodyfontsize \shewn\baselineskip
+385         \setbox\toptry=\vbox{\the\toptxt}
+
+
+? !
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? 
+
+tex error       > error on line 375 in file /tmp/4953.OBS-ru-v3testDPB.tex: ! Emergency stop
+
+l.375 ...expr \baselineskip * 0.88pt / \fudge \relax
+                                                  
+
+365         \txtneed=\dimexpr \ht\toptry + \ht\bottry \relax
+366         \need=\dimexpr \txtneed + \imgneed \relax
+367         \leftover=\dimexpr \vsize - \need \relax
+368         \txtroom=\dimexpr \txtneed + \leftover \relax
+369         \shew{\ht\toptry} \shewn{\ht\bottry}
+370         \ScaleFactor=\dimexpr \fudge * \txtroom / \txtneed \relax
+371         \shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover
+372         \shew\txtroom \shew \txtneed \shewn\ScaleFactor
+373         \shew\bodyfontsize \shewn\baselineskip
+374         \ifdim \ScaleFactor < \lowend
+375 >>          \baselineskip=\dimexpr \baselineskip * 0.88pt / \fudge \relax
+376             \bodyfontsize=7.5pt
+377             \message{WARNING: Font size scaled-down on page #\pageno in ru version to fit both frames on the page\newlinechar}
+378         \else \ifdim \ScaleFactor > \highend
+379             \baselineskip=\dimexpr \baselineskip * 1.5pt / \fudge \relax
+380         \else
+381             \baselineskip=\dimexpr \baselineskip * \ScaleFactor / \fudge \relax
+382         \fi \fi
+383         \shew\imgneed \shew \txtneed \shew \need \shew\vsize  \shew\leftover \shew\txtroom \shew\ScaleFactor
+384         \shew\bodyfontsize \shewn\baselineskip
+385         \setbox\toptry=\vbox{\the\toptxt}
+
+End of file on the terminal!
+
+

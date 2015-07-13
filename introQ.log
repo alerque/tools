@@ -1,0 +1,93 @@
+fonts           > injections > using experimental injector
+
+open source     > 1 > 1 > /opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv
+
+ConTeXt  ver: 2014.12.11 12:02 MKIV beta  fmt: 2014.12.15  int: english/english
+
+system          > 'cont-new.mkiv' loaded
+open source     > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+close source    > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+system          > files > jobname 'introQ', input '../httpdocs/introQ', result 'introQ'
+fonts           > latin modern fonts are not preloaded
+languages       > language 'en' is active
+open source     > 2 > 3 > ../httpdocs/introQ.tex
+open source     > 3 > 4 > /opt/context/tex/texmf-context/tex/context/base/type-imp-dejavu.mkiv
+close source    > 3 > 4 > /opt/context/tex/texmf-context/tex/context/base/type-imp-dejavu.mkiv
+open source     > 3 > 5 > /opt/context/tex/texmf-context/tex/context/base/type-imp-xits.mkiv
+open source     > 4 > 6 > /opt/context/tex/texmf-context/tex/context/base/type-imp-texgyre.mkiv
+close source    > 4 > 6 > /opt/context/tex/texmf-context/tex/context/base/type-imp-texgyre.mkiv
+close source    > 3 > 6 > /opt/context/tex/texmf-context/tex/context/base/type-imp-xits.mkiv
+structures      > begin of sectionblock 'bodypart'
+structures      > end of sectionblock 'bodypart'
+backend         > xmp > using file '/opt/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml'
+pages           > flushing realpage 1, userpage 1
+pages           > flushing realpage 2, userpage 2
+close source    > 2 > 6 > ../httpdocs/introQ.tex
+close source    > 1 > 6 > /opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv
+
+system          > structure > start used structure
+
+used structure  > text: introQ
+
+system          > structure > stop used structure
+
+
+system          > files > start used files
+
+used file       >    1: filename=cont-yes.mkiv filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv usedmethod=database
+used file       >    2: filename=publ-imp-apa.lua filetype=lua foundname=/opt/context/tex/texmf-context/tex/context/base/publ-imp-apa.lua usedmethod=database
+used file       >    3: filename=cont-new.mkiv filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv usedmethod=database
+used file       >    4: filename=lang-us.lua filetype=lua foundname=/opt/context/tex/texmf-context/tex/context/patterns/lang-us.lua usedmethod=database
+used file       >    5: filename=../httpdocs/introQ.tex foundname=../httpdocs/introQ.tex usedmethod=direct
+used file       >    6: filename=type-imp-dejavu.mkiv filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/type-imp-dejavu.mkiv usedmethod=database
+used file       >    7: filename=type-imp-xits.mkiv filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/type-imp-xits.mkiv usedmethod=database
+used file       >    8: filename=type-imp-texgyre.mkiv filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/type-imp-texgyre.mkiv usedmethod=database
+used file       >    9: filename=xits-math.lfg filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/fonts/xits-math.lfg usedmethod=database
+used file       >   10: filename=DejaVuSerif.ttf filetype=ttf format=ttf foundname=/opt/context/tex/texmf/fonts/truetype/public/dejavu/DejaVuSerif.ttf usedmethod=database
+used file       >   11: filename=xits-math.otf filetype=otf format=otf foundname=/opt/context/tex/texmf/fonts/opentype/public/xits/xits-math.otf usedmethod=database
+used file       >   12: filename=xits-mathbold.otf filetype=otf format=otf foundname=/opt/context/tex/texmf/fonts/opentype/public/xits/xits-mathbold.otf usedmethod=database
+used file       >   13: filename=lpdf-pdx.xml filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml usedmethod=database
+
+system          > files > stop used files
+
+
+system          > options > start commandline options
+
+used option     > currentrun="1"
+used option     > fulljobname="../httpdocs/introQ.tex"
+used option     > input="../httpdocs/introQ.tex"
+used option     > kindofrun="1"
+used option     > maxnofruns="8"
+used option     > no-parse-first-line="true"
+
+system          > options > stop commandline options
+
+system          > options > start commandline files
+
+used file       >    1: ../httpdocs/introQ.tex
+
+system          > options > stop commandline files
+
+
+mkiv lua stats  > used config file: selfautoparent:/texmf/web2c/texmfcnf.lua
+mkiv lua stats  > used cache path: /opt/context/tex/texmf-cache/luatex-cache/context/5fe67e0bfe781ce0dde776fb1556f32e
+mkiv lua stats  > resource resolver: loadtime 0.010 seconds, 0 scans with scantime 0.000 seconds, 0 shared scans, 13 found files, scanned paths: <none>
+mkiv lua stats  > stored bytecode data: 359 modules (0.170 sec), 72 tables (0.010 sec), 431 chunks (0.180 sec)
+mkiv lua stats  > running in nuts mode: yes
+mkiv lua stats  > cleaned up reserved nodes: 44 nodes, 442 lists of 441
+mkiv lua stats  > node memory usage: 3 glue, 3 penalty, 12 attribute, 36 glue_spec, 4 attribute_list, 2 temp
+mkiv lua stats  > node list callback tasks: 6 unique task lists, 5 instances (re)created, 79 calls
+mkiv lua stats  > used backend: pdf (backend for directly generating pdf output)
+mkiv lua stats  > loaded patterns: en::2, load time: 0.000
+mkiv lua stats  > jobdata time: 0.001 seconds saving, 0.000 seconds loading
+mkiv lua stats  > callbacks: 258 direct, 700 indirect, 958 total
+mkiv lua stats  > randomizer: resumed with value 0.14561352652759
+mkiv lua stats  > result saved in file: introQ.pdf, compresslevel 3, objectcompresslevel 3
+mkiv lua stats  > loaded fonts: 3 files: xits-math.otf, xits-mathbold.otf, dejavuserif.ttf
+mkiv lua stats  > fonts load time: 0.286 seconds 
+mkiv lua stats  > used platform: linux-64, type: unix, binary subtree: texmf-linux-64
+mkiv lua stats  > luatex banner: this is luatex, version beta-0.79.2 (tex live 2015/dev) (rev 5084)
+mkiv lua stats  > control sequences: 40431 of 65536 + 100000
+mkiv lua stats  > lua properties: engine: lua, used memory: 65 MB (ctx: 65 MB), hash type: lua, hash chars: min(64,40), symbol mask: utf (τεχ)
+mkiv lua stats  > runtime: 0.636 seconds, 2 processed pages, 2 shipped pages, 3.145 pages/second
+

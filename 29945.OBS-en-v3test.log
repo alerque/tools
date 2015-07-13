@@ -1,0 +1,194 @@
+fonts           > injections > using experimental injector
+
+open source     > 1 > 1 > /opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv
+
+ConTeXt  ver: 2014.12.11 12:02 MKIV beta  fmt: 2014.12.15  int: english/english
+
+system          > 'cont-new.mkiv' loaded
+open source     > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+close source    > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+system          > files > jobname '29945.OBS-en-v3test', input '/tmp/29945.OBS-en-v3test', result '29945'
+fonts           > latin modern fonts are not preloaded
+languages       > language 'en' is active
+open source     > 2 > 3 > /tmp/29945.OBS-en-v3test.tex
+fonts           > beware: no fonts are loaded yet, using 'lm mono' in box
+backend         > xmp > using file '/opt/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml'
+pages           > flushing realpage 1, userpage 1
+open source     > 3 > 4 > /opt/context/tex/texmf-context/tex/context/base/type-imp-texgyre.mkiv
+close source    > 3 > 4 > /opt/context/tex/texmf-context/tex/context/base/type-imp-texgyre.mkiv
+
+Overfull \hbox (51.81146pt too wide) in paragraph at lines 69--72
+\3>pagella-8pt-rm-tf-0--0 tion-Share-Alike 4.0 In-ter-na-tional Li-cense http://cre-ativecom-mons.org/li-censes/by-sa/4.0/. 
+
+\hbox(5.808+2.264)x271.01001, glue set - 1.0, direction TLT
+.\3>pagella-8pt-rm-tf-0--0 t
+.\3>pagella-8pt-rm-tf-0--0 i
+.\3>pagella-8pt-rm-tf-0--0 o
+.\3>pagella-8pt-rm-tf-0--0 n
+.\3>pagella-8pt-rm-tf-0--0 -
+.etc.
+
+pages           > flushing realpage 2, userpage 2
+pages           > flushing realpage 3, userpage 3
+pages           > flushing realpage 4, userpage 4
+structure       > sectioning > section @ level 3 : 0.0.1 -> 1. The Creation
+pages           > flushing realpage 5, userpage 5
+floatblocks     > '1' placed
+floatblocks     > '2' placed
+floatblocks     > 1 saved
+floatblocks     > 2 saved
+floatblocks     > 3 saved
+floatblocks     > 4 saved
+floatblocks     > 5 saved
+floatblocks     > 6 saved
+floatblocks     > 7 saved
+floatblocks     > 8 saved
+floatblocks     > 9 saved
+floatblocks     > 10 saved
+floatblocks     > 11 saved
+floatblocks     > 12 saved
+floatblocks     > 13 saved
+floatblocks     > 14 saved
+floatblocks     > 15 saved
+floatblocks     > 1 moved
+floatblocks     > 2 moved
+pages           > flushing realpage 6, userpage 6
+floatblocks     > 3 moved
+floatblocks     > 4 moved
+pages           > flushing realpage 7, userpage 7
+floatblocks     > 5 moved
+floatblocks     > 6 moved
+pages           > flushing realpage 8, userpage 8
+floatblocks     > 7 moved
+floatblocks     > 8 moved
+pages           > flushing realpage 9, userpage 9
+floatblocks     > 9 moved
+floatblocks     > 10 moved
+pages           > flushing realpage 10, userpage 10
+floatblocks     > 11 moved
+floatblocks     > 12 moved
+pages           > flushing realpage 11, userpage 11
+floatblocks     > 13 moved
+floatblocks     > 14 moved
+pages           > flushing realpage 12, userpage 12
+floatblocks     > 15 moved
+pages           > flushing realpage 13, userpage 13
+structure       > sectioning > section @ level 3 : 0.0.2 -> 2. Sin Enters the World
+pages           > flushing realpage 14, userpage 14
+floatblocks     > '18' placed
+floatblocks     > '19' placed
+floatblocks     > 16 saved
+floatblocks     > 17 saved
+floatblocks     > 18 saved
+floatblocks     > 19 saved
+floatblocks     > 20 saved
+floatblocks     > 21 saved
+floatblocks     > 22 saved
+floatblocks     > 23 saved
+floatblocks     > 24 saved
+floatblocks     > 25 saved
+floatblocks     > 26 saved
+floatblocks     > 16 moved
+floatblocks     > 17 moved
+pages           > flushing realpage 15, userpage 15
+floatblocks     > 18 moved
+floatblocks     > 19 moved
+pages           > flushing realpage 16, userpage 16
+floatblocks     > 20 moved
+floatblocks     > 21 moved
+pages           > flushing realpage 17, userpage 17
+floatblocks     > 22 moved
+floatblocks     > 23 moved
+pages           > flushing realpage 18, userpage 18
+floatblocks     > 24 moved
+floatblocks     > 25 moved
+pages           > flushing realpage 19, userpage 19
+floatblocks     > 26 moved
+pages           > flushing realpage 20, userpage 20
+structure       > sectioning > section @ level 3 : 0.0.3 -> 3. The Flood
+pages           > flushing realpage 21, userpage 21
+floatblocks     > '31' placed
+floatblocks     > '32' placed
+
+tex error       > error on line 248 in file /tmp/29945.OBS-en-v3test.tex: ! Interruption
+
+
+\ctxcommand #1->\directlua {
+                            commands.#1}
+\figurestatus ...ommand {figurestatus("status",0)}
+                                                  \relax 
+\grph_include_place ...else \ifcase \figurestatus 
+                                                  \ctxlua {figures.dummy()}\...
+\grph_include_figure ...include_place [#1][#2][#3]
+                                                  \fi 
+<to be read again> 
+}
+l.248 ...d.org/obs/jpg/1/en/360px/obs-en-03-03.jpg]}
+                                                  
+
+238     \placefigure[nonumber]
+239       {After a long time, many people were living in the world. They had become very wicked and violent. It became so bad that God decided to destroy the whole world with a huge flood. \blank[small, flexible]}
+240       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-01.jpg]}
+241     
+242     \placefigure[nonumber]
+243       {But Noah found favor with God. He was a righteous man, living among wicked people. God told Noah about the flood He was planning to send. He told Noah to build a huge boat. \blank[small, flexible]}
+244       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-02.jpg]}
+245     
+246     \placefigure[nonumber]
+247       {God told Noah to make the boat about 140 meters long, 23 meters wide, and 13.5 meters high. Noah was to build it with wood and to make three levels, many rooms, a roof, and a window. The boat would keep Noah, his family, and every kind of land animal safe during the flood. \blank[small, flexible]}
+248 >>    {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-03.jpg]}
+249     
+250     \placefigure[nonumber]
+251       {Noah obeyed God. He and his three sons built the boat just the way God had told them. It took many years to build the boat, because it was so big. Noah warned the people about the flood that was coming and told them to turn to God, but they did not believe him. \blank[small, flexible]}
+252       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-04.jpg]}
+253     
+254     \placefigure[nonumber]
+255       {God also commanded Noah and his family to gather enough food for themselves and the animals. When everything was ready, God told Noah it was time for him, his wife, his three sons, and their wives to get into the boat—eight people in all. \blank[small, flexible]}
+256       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-05.jpg]}
+257     
+258     \placefigure[nonumber]
+
+
+? 
+
+tex error       > error on line 248 in file /tmp/29945.OBS-en-v3test.tex: ! Emergency stop
+
+
+\ctxcommand #1->\directlua {
+                            commands.#1}
+\figurestatus ...ommand {figurestatus("status",0)}
+                                                  \relax 
+\grph_include_place ...else \ifcase \figurestatus 
+                                                  \ctxlua {figures.dummy()}\...
+\grph_include_figure ...include_place [#1][#2][#3]
+                                                  \fi 
+<to be read again> 
+}
+l.248 ...d.org/obs/jpg/1/en/360px/obs-en-03-03.jpg]}
+                                                  
+
+238     \placefigure[nonumber]
+239       {After a long time, many people were living in the world. They had become very wicked and violent. It became so bad that God decided to destroy the whole world with a huge flood. \blank[small, flexible]}
+240       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-01.jpg]}
+241     
+242     \placefigure[nonumber]
+243       {But Noah found favor with God. He was a righteous man, living among wicked people. God told Noah about the flood He was planning to send. He told Noah to build a huge boat. \blank[small, flexible]}
+244       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-02.jpg]}
+245     
+246     \placefigure[nonumber]
+247       {God told Noah to make the boat about 140 meters long, 23 meters wide, and 13.5 meters high. Noah was to build it with wood and to make three levels, many rooms, a roof, and a window. The boat would keep Noah, his family, and every kind of land animal safe during the flood. \blank[small, flexible]}
+248 >>    {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-03.jpg]}
+249     
+250     \placefigure[nonumber]
+251       {Noah obeyed God. He and his three sons built the boat just the way God had told them. It took many years to build the boat, because it was so big. Noah warned the people about the flood that was coming and told them to turn to God, but they did not believe him. \blank[small, flexible]}
+252       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-04.jpg]}
+253     
+254     \placefigure[nonumber]
+255       {God also commanded Noah and his family to gather enough food for themselves and the animals. When everything was ready, God told Noah it was time for him, his wife, his three sons, and their wives to get into the boat—eight people in all. \blank[small, flexible]}
+256       {\externalfigure[https://api.unfoldingword.org/obs/jpg/1/en/360px/obs-en-03-05.jpg]}
+257     
+258     \placefigure[nonumber]
+
+End of file on the terminal!
+
+

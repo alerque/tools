@@ -1,0 +1,108 @@
+open source     > 1 > 1 > /opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv
+
+ConTeXt  ver: 2015.05.24 12:42 MKIV beta  fmt: 2015.6.2  int: english/english
+
+system          > 'cont-new.mkiv' loaded
+open source     > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+close source    > 2 > 2 > /opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv
+system          > files > jobname 'test', input './test', result 'test'
+fonts           > latin modern fonts are not preloaded
+languages       > language 'en' is active
+open source     > 2 > 3 > /var/www/vhosts/door43.org/tools/test.tex
+fonts           > preloading modern-designsize (math)
+fonts           > typescripts > unknown library 'modern-designsize'
+fonts           > 'fallback modern-designsize mm 12pt' is loaded
+fonts           > preloading modern-designsize (mono)
+fonts           > 'fallback modern-designsize tt 12pt' is loaded
+fonts           > defining > font with asked name 'unknown' is not found using lookup 'file'
+fonts           > defining > unknown font 'unknown', loading aborted
+fonts           > defining > unable to define 'unknown' as 'noto-12pt-ss-tf-0--0'
+fonts           > defining > font with asked name 'unknown' is not found using lookup 'file'
+fonts           > defining > unknown font 'unknown', loading aborted
+fonts           > defining > unable to define 'unknown' as 'noto-12pt-mm-mr--3'
+fonts           > defining > font with asked name 'unknown' is not found using lookup 'file'
+fonts           > defining > unknown font 'unknown', loading aborted
+fonts           > defining > unable to define 'unknown' as 'noto-12pt-mm-mr--2'
+fonts           > defining > font with asked name 'unknown' is not found using lookup 'file'
+fonts           > defining > unknown font 'unknown', loading aborted
+fonts           > defining > unable to define 'unknown' as 'noto-12pt-mm-mr--1'
+fonts           > defining > font with asked name 'unknown' is not found using lookup 'file'
+fonts           > defining > unknown font 'unknown', loading aborted
+fonts           > defining > unable to define 'unknown' as 'noto-12pt-mm-mb--3'
+fonts           > defining > font with asked name 'unknown' is not found using lookup 'file'
+fonts           > defining > unknown font 'unknown', loading aborted
+fonts           > defining > unable to define 'unknown' as 'noto-12pt-mm-mb--2'
+fonts           > defining > font with asked name 'unknown' is not found using lookup 'file'
+fonts           > defining > unknown font 'unknown', loading aborted
+fonts           > defining > unable to define 'unknown' as 'noto-12pt-mm-mb--1'
+fonts           > math: unset for global bodyfont noto at 12pt
+fonts           > math: unset for global bodyfont noto at 12pt
+fonts           > math: unset for global bodyfont noto at 12pt
+fonts           > math: unset for global bodyfont noto at 12pt
+backend         > xmp > using file '/opt/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml'
+pages           > flushing realpage 1, userpage 1
+
+fonts           > !! No bodyfont has been defined and no defaults have been
+fonts           > !! loaded (maybe due to a missing \starttext).
+
+close source    > 2 > 3 > /var/www/vhosts/door43.org/tools/test.tex
+close source    > 1 > 3 > /opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv
+
+system          > structure > start used structure
+
+used structure  > text: test
+
+system          > structure > stop used structure
+
+
+system          > files > start used files
+
+used file       >    1: filename=cont-yes.mkiv filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/cont-yes.mkiv usedmethod=database
+used file       >    2: filename=publ-imp-default.lua filetype=scripts foundname=/opt/context/tex/texmf-context/tex/context/base/publ-imp-default.lua usedmethod=database
+used file       >    3: filename=cont-new.mkiv filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/cont-new.mkiv usedmethod=database
+used file       >    4: filename=lang-us.lua filetype=scripts foundname=/opt/context/tex/texmf-context/tex/context/patterns/lang-us.lua usedmethod=database
+used file       >    5: filename=/var/www/vhosts/door43.org/tools/test.tex foundname=/var/www/vhosts/door43.org/tools/test.tex usedmethod=direct
+used file       >    6: filename=lpdf-pdx.xml filetype=tex foundname=/opt/context/tex/texmf-context/tex/context/base/lpdf-pdx.xml usedmethod=database
+
+system          > files > stop used files
+
+
+system          > options > start commandline options
+
+used option     > currentrun="3"
+used option     > fulljobname="./test.tex"
+used option     > input="./test.tex"
+used option     > kindofrun="2"
+used option     > maxnofruns="9"
+used option     > no-parse-first-line="true"
+
+system          > options > stop commandline options
+
+system          > options > start commandline files
+
+used file       >    1: ./test.tex
+
+system          > options > stop commandline files
+
+
+mkiv lua stats  > used config file: selfautoparent:/texmf/web2c/texmfcnf.lua
+mkiv lua stats  > used cache path: /opt/context/tex/texmf-cache/luatex-cache/context/5fe67e0bfe781ce0dde776fb1556f32e
+mkiv lua stats  > resource resolver: loadtime 0.011 seconds, 0 scans with scantime 0.000 seconds, 0 shared scans, 6 found files, scanned paths: <none>
+mkiv lua stats  > stored bytecode data: 371 modules (0.270 sec), 78 tables (0.020 sec), 449 chunks (0.290 sec)
+mkiv lua stats  > traced context: maxstack: 1133, freed: 0, unreachable: 1133
+mkiv lua stats  > running in nuts mode: yes
+mkiv lua stats  > cleaned up reserved nodes: 44 nodes, 439 lists of 438
+mkiv lua stats  > node memory usage: 2 glue, 2 penalty, 9 attribute, 32 glue_spec, 3 attribute_list, 2 temp
+mkiv lua stats  > node list callback tasks: 6 unique task lists, 5 instances (re)created, 64 calls
+mkiv lua stats  > used backend: pdf (backend for directly generating pdf output)
+mkiv lua stats  > loaded patterns: en::2, load time: 0.000
+mkiv lua stats  > jobdata time: 0.001 seconds saving, 0.000 seconds loading
+mkiv lua stats  > callbacks: 182 direct, 262 indirect, 444 total
+mkiv lua stats  > randomizer: resumed with value 0.22141041058181
+mkiv lua stats  > result saved in file: test.pdf, compresslevel 3, objectcompresslevel 3
+mkiv lua stats  > used platform: linux-64, type: unix, binary subtree: texmf-linux-64
+mkiv lua stats  > luatex banner: this is luatex, version beta-0.80.0 (tex live 2015) (rev 5238)
+mkiv lua stats  > control sequences: 42609 of 65536 + 100000
+mkiv lua stats  > lua properties: engine: lua, used memory: 39 MB (ctx: 38 MB), hash type: lua, hash chars: min(64,40), symbol mask: utf (τεχ)
+mkiv lua stats  > runtime: 0.322 seconds, 1 processed pages, 1 shipped pages, 3.106 pages/second
+
