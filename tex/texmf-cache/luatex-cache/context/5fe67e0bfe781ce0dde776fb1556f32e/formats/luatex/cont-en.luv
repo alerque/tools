@@ -1,0 +1,6 @@
+return {
+ ["enginebanner"]="This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/dev) (rev 5209)",
+ ["formatbanner"]="2015.04.08 21:31",
+ ["sourcefile"]="context.mkiv",
+ ["sourcehash"]="8a7b6a90d7fd3fe381edcec5bc16fc6c",
+}
