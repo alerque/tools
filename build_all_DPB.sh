@@ -1,11 +1,16 @@
 #!/bin/ksh
-tagver=3testDPB
-tagver=20150522-draft-samples-DPB
-n=$(egrep '^MAX' obs/export.py| awk '{print $3}')
-[[ $n -eq 0 ]] && zipE=full.zip || zipE=samples.zip
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tagver=3dpbTEST
+yyyymmdd=$(date +%Y%m%d)
+#langlist="am ru tr fr pt-br en es"
+langlist="ru tr"
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+n=$(egrep '^MAX' obs/export.py | tail -1 | awk '{print $3}')
+[[ $n -eq 0 ]] && zipB=full || zipB=samples-first-$n-chapters
+zipE=$zipB.zip
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 rm -f /tmp/$zipE /tmp/tmp.*$tagver* /tmp/[A-Za-z]*$tagver*[a-z]
-#for lang in en es fr pt-br ru
-for lang in am ru fr pt-br en es
+for lang in $(echo $langlist)
 do
     obs/book/publish_PDF.sh -l $lang -v $tagver
     zip -9rj /tmp/$zipE /tmp/*${lang}*json.tmp
@@ -15,7 +20,7 @@ done
     formatD="%-10s%-10s%-10s%-10s%s\n"
     printf "$formatA" "language" "link-counts-each-matter-part  possibly-rogue-links-in-JSON-files"
     printf "$formatA" "--------" "----------------------------  --------------------------------------------------------"
-    for lang in am ru fr pt-br en es
+    for lang in $(echo $langlist)
     do
 	{
         cat /tmp/OBS-${lang}*${tagver}*tex \
@@ -48,4 +53,14 @@ cat /tmp/OBS-${tagver}-report.txt
 zip -9rj /tmp/$zipE /tmp/[A-Za-z]*$tagver*[a-z]  /tmp/OBS-${tagver}-report.txt 
 chown dboerschlein /tmp/$zipE
 chmod 664 /tmp/$zipE
+for lang in $(echo $langlist)
+do
+    creE=OBS-${lang}-v${tagver}.pdf
+    outE=OBS-${lang}-v${tagver}-${yyyymmdd}.pdf
+    outD=/tmp/httpdocs/draft
+    cp -pf /tmp/$creE $outD/$outE
+    chmod 666 $outD/$outE
+    chown dboerschlein $outD/$outE
+    echo Created: http://test.door43.org/draft/$outE
+done
 exit
