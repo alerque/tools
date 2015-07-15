@@ -12,7 +12,7 @@
 # Set defaults (may be overridden at runtime with environment variables)
 : ${tagver:=3dpbTEST}
 : ${yyyymmdd:=$(date +%Y%m%d)}
-: ${langlist:=am ru tr fr pt-br en es}
+: ${langlist:=am ar en es fr pt-br ru tr}
 : ${output:=$(pwd)}
 : ${drafts:=}
 
