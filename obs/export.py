@@ -444,7 +444,11 @@ def getJSON(lang,entry,tmpent):
     getURL(anyJSONf, anytmpf)
     if not os.path.exists(anytmpf):
         print "Failed to get JSON {0} file into {1}.".format(anyJSONe,anytmpf)
-        sys.exit(1)
+        # If we cant't find the data in a language, try substituting English
+        if lang != "en":
+            return getJSON("en", entry, tmpent)
+        else:
+            sys.exit(1)
     return anytmpf
 
 def main(lang, outpath, format, img_res, checkinglevel):
