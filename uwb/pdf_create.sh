@@ -282,6 +282,7 @@ book_export () {
         --latex-engine="xelatex" \
         -V documentclass="scrartcl" \
         -V classoption="oneside" \
+        -V pagebreaks \
         -V geometry='hmargin=2cm' \
         -V geometry='vmargin=3cm' \
         -V title="$TITLE" \
