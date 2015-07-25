@@ -283,6 +283,7 @@ book_export () {
         -V documentclass="scrartcl" \
         -V classoption="oneside" \
         -V pagebreaks \
+        -V columns="2" \
         -V geometry='hmargin=2cm' \
         -V geometry='vmargin=3cm' \
         -V title="$TITLE" \

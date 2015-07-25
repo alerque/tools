@@ -157,6 +157,17 @@ $if(pagebreaks)$
 \newcommand\subsectionbreak{\clearpage}
 $endif$
 
+$if(columns)$
+\usepackage{multicol}
+\usepackage{color}
+\setlength{\columnsep}{1cm}
+\setlength{\columnseprule}{0.01pt}
+\renewcommand{\columnseprulecolor}{\color[rgb]{0.5,0.5,0.5}}
+\raggedbottom
+\raggedcolumns
+\interlinepenalty=10000
+$endif$
+
 \begin{document}
 \pagenumbering{gobble}
 $if(title)$
@@ -190,7 +201,13 @@ $if(lof)$
 \listoffigures
 $endif$
 
+$if(columns)$
+\begin{multicols}{$columns$}
 $body$
+\end{multicols}
+$else$
+$body$
+$endif$
 
 $if(natbib)$
 $if(biblio-files)$
