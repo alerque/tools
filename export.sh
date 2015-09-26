@@ -17,7 +17,6 @@
 # If anything at all throws an error and this script doesn't otherwise catch
 # and handle it correctly that is a bug in this script and should be fixed.
 set -e
-set -x
 
 # Usage instructions
 help() {
@@ -58,25 +57,6 @@ while getopts r:f:l:o:r:hdet: opt; do
 	esac
 done
 
-function fail() {
-	echo "Error: $@"
-	exit 1
-}
-
-function usage_error() {
-	echo "Usage error: $@"
-	help
-	exit 1
-}
-
-# Check for a minimum amount of information from arguments to continue
-test ${#resources[@]} -ge 1 ||
-	usage_error "At least one resource must be specified"
-test ${#languages[@]} -ge 1 ||
-	usage_error "At least one language must be specified"
-test ${#formats[@]} -ge 1 ||
-	usage_error "At least one output format must be specified"
-
 # Setup working environment including default values for anything not specified
 : ${TOOLS_DIR:=$(cd $(dirname "$0")/ && pwd)}
 : ${DEBUG:=false}
@@ -97,62 +77,25 @@ if [[ -z $TEMP_DIR ]]; then
 elif [[ ! -d $TEMP_DIR ]]; then
     mkdir -p "$TEMP_DIR"
 fi
-: ${LOG_FILE:=$TEMP_DIR/export.log}
-
-# Utility functions are split out here to to make the main program logic easier
-# to follow
-
-function rebuild_tex_font_cache() {
-	export OSFONTDIR="/usr/share/fonts/google-noto;/usr/share/fonts/noto-fonts/hinted;/usr/local/share/fonts;/usr/share/fonts;~/.local/share/fonts"
-	mtxrun --script fonts --reload
-	context --generate
-}
-
-function check_tex_font_cache() {
-	mtxrun --script fonts --list --all |
-		grep -q $1
-}
-
-function tex_has_font() {
-	check_tex_font_cache $1 ||
-		rebuild_tex_font_cache && check_tex_font_cache $1 ||
-		fail "Requested font $1 not found on system"
-}
-
-function setup_context() {
-	if ! command -v context >/dev/null; then
-		test -d "$TOOLS_DIR/tex" || install_context
-		source "$TOOLS_DIR/tex/setuptex"
-	fi
-	# The ConTeXt templates expect to find a few building blocks in the main
-	# repo, but we're going to be working in a temp space, so once we are there
-	# link back to the obs tools so these snippets can be found.
-	ln -sf "$TOOLS_DIR/obs"
-}
-
-function install_context() {
-	pushd $TOOLS_DIR
-    sh <(curl -s -L http://minimals.contextgarden.net/setup/first-setup.sh)
-	popd
-}
-
-function start_logging() {
-	# If running in DEBUG mode, output information about every command run
-	$DEBUG && set -x
-
-    # If a reporting location is specified, capture and log out own stdout
-	[[ -n "$REPORTS_LOCS" ]] && exec 2>&1 > $LOG_FILE
-}
-
-function is_child_process() {
-	true
-}
-
-start_logging
 
 # Change to own own temp dir but note our current dir so we can get back to it
 pushd $TEMP_DIR > /dev/null
-SOURCED=true
+
+: ${LOG_FILE:=$TEMP_DIR/export.log}
+
+# Import common shell functions from our library
+source $TOOLS_DIR/lib/shell_functions.sh
+
+# Check for a minimum amount of information from arguments to continue
+test ${#resources[@]} -ge 1 ||
+	usage_error "At least one resource must be specified"
+test ${#languages[@]} -ge 1 ||
+	usage_error "At least one language must be specified"
+test ${#formats[@]} -ge 1 ||
+	usage_error "At least one output format must be specified"
+
+# Main logic
+start_logging
 
 # Loop through all the work we have to do
 for resource in "${resources[@]}"; do
@@ -160,6 +103,7 @@ for resource in "${resources[@]}"; do
 		for format in "${formats[@]}"; do
 			case $format in
 				pdf)
+					source $TOOLS_DIR/lib/tex_functions.sh
 					case $resource in
 						obs)
 							setup_context
