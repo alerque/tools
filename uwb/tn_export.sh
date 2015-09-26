@@ -10,26 +10,10 @@
 #  Richard Mahn <richard_mahn@wycliffeassociates.org>
 #  Caleb Maclennan <caleb@alerque.com>
 
-# Set script to die if any of the subprocesses exit with a fail code. This
-# catches a lot of scripting mistakes that might otherwise only show up as side
-# effects later in the run (or at a later time). This is especially important so
-# we know out temp dir situation is sane before we get started.
-set -e
+is_child_process || echo "Please run this using export.sh" && exit 1
 
-# ENVIRONMENT VARIABLES:
-# DEBUG - true/false -  If true, will run "set -x"
-# TOOLS_DIR - Directory of the "tools" repo where scripts and templates resides. Defaults to the parent directory of this script
-# WORKING_DIR - Directory where all HTML files for tN, tQ, tW, tA are collected and then a full HTML file is made before conversion to PDF, defaults to a system suggested temp location
-# OUTPUT_DIR - Directory to put the PDF, defaults to the current working directory
 # BASE_URL - URL for the _export/xhtmlbody to get Dokuwiki content, defaults to 'https://door43.org/_export/xhtmlbody'
 # TEMPLATE - Location of the TeX template for Pandoc, defaults to "$TOOLS_DIR/general_tools/pandoc_pdf_template.tex
-
-# Instantiate a DEBUG flag (default to false). This enables output usful durring
-# script development or later DEBUGging but not normally needed durring
-# production runs. It can be used by calling the script with the var set, e.g.:
-#     $ DEBUG=true ./uwb/pdf_create.sh <book>
-
-: ${TOOLS_DIR:=$(cd $(dirname "$0")/../ && pwd)}
 
 FILE_TYPES=()
 BOOKS_TO_PROCESS=()
@@ -44,21 +28,6 @@ while [[ $# > 0 ]]
 do
     arg="$1"
     case $arg in
-        -o|--output)
-            OUTPUT_DIR="$2"
-            shift # past argument
-        ;;
-        -w|--working)
-            WORKING_DIR="$2"
-            shift # past argument
-        ;;
-        -l|--lang|-language)
-            LANGUAGE="$2"
-            shift # past argument
-        ;;
-        --debug)
-            DEBUG=true
-        ;;
         -t|--type)
             arg2=${2,,}
 
@@ -94,10 +63,6 @@ do
     shift # past argument or value
 done
 
-: ${DEBUG:=false}
-: ${LANGUAGE:=en}
-
-: ${OUTPUT_DIR:=$(pwd)}
 : ${TEMPLATE:=$TOOLS_DIR/general_tools/pandoc_pdf_template.tex}
 
 : ${D43_BASE_DIR:=/var/www/vhosts/door43.org/httpdocs/data/gitrepo/pages}
@@ -108,26 +73,6 @@ done
 : ${TQ_DIR:=$LANGUAGE/bible/questions/comprehension}
 : ${TW_DIR:=$LANGUAGE/obe}
 : ${TA_DIR:=$LANGUAGE/ta}
-
-# If running in DEBUG mode, output information about every command being run
-$DEBUG && set -x
-
-# Create a temorary diretory using the system default temp directory location
-# in which we can stash any files we want in an isolated namespace. It is very
-# important that this dir actually exist. The set -e option should always be used
-# so that if the system doesn't let us create a temp directory we won't contintue.
-if [[ -z $WORKING_DIR ]]; then
-    WORKING_DIR=$(mktemp -d -t "ubw_pdf_create.XXXXXX")
-    # If _not_ in DEBUG mode, _and_ we made our own temp directory, then
-    # cleanup out temp files after every run. Running in DEBUG mode will skip
-    # this so that the temp files can be inspected manually
-    $DEBUG || trap 'popd > /dev/null; rm -rf "$WORKING_DIR"' EXIT SIGHUP SIGTERM
-elif [[ ! -d $WORKING_DIR ]]; then
-    mkdir -p "$WORKING_DIR"
-fi
-
-# Change to own own temp dir but note our current dir so we can get back to it
-pushd "$WORKING_DIR" > /dev/null
 
 DATE=`date +"%Y-%m-%d"`
 
@@ -513,4 +458,3 @@ do
 done
 
 echo "Done!"
-
