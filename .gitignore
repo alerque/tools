@@ -5,3 +5,6 @@ local_settings.py
 /bin
 /tex
 /status-of-update.lua
+*.pdf
+*.odt
+*.docx
